@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Input | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+  <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-keyboard"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Input</h1>
+
+                    <p dir="rtl">
+                        الـ Input يستخدم لاستقبال البيانات التي يدخلها
+                        المستخدم من خلال لوحة المفاتيح.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Input</strong> هو إدخال البيانات
+                        من المستخدم إلى البرنامج أثناء تشغيله.
+                    </p>
+
+                    <p dir="rtl">
+                        في C# نستخدم
+                        <strong>Console.ReadLine()</strong>
+                        لقراءة النص الذي يدخله المستخدم.
+                    </p>
+
+                </div>
+
+
+                <!-- ReadLine -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-keyboard"></i>
+                        Console.ReadLine()
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Enter your name: ");
+
+string name = Console.ReadLine();
+
+Console.WriteLine(name);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يطلب البرنامج من المستخدم إدخال اسمه،
+                        ثم يتم تخزين القيمة التي كتبها داخل
+                        المتغير <strong>name</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- String Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-font"></i>
+                        String Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Enter your name: ");
+
+string name = Console.ReadLine();</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        القيمة التي يتم إرجاعها من
+                        <strong>Console.ReadLine()</strong>
+                        تكون نصًا، لذلك يمكن تخزينها في
+                        <strong>string</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Integer Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-hashtag"></i>
+                        Integer Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Enter your age: ");
+
+int age = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(age);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        لأن
+                        <strong>Console.ReadLine()</strong>
+                        تقرأ النص، نستخدم
+                        <strong>Convert.ToInt32()</strong>
+                        لتحويل الإدخال إلى رقم صحيح.
+                    </p>
+
+                </div>
+
+
+                <!-- Boolean Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-check"></i>
+                        Boolean Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Are you a student? ");
+
+bool isStudent = Convert.ToBoolean(Console.ReadLine());
+
+Console.WriteLine(isStudent);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام
+                        <strong>Convert.ToBoolean()</strong>
+                        لتحويل الإدخال إلى قيمة منطقية
+                        <strong>true</strong> أو <strong>false</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Char Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-a"></i>
+                        Char Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Enter your grade: ");
+
+char grade = Convert.ToChar(Console.ReadLine());
+
+Console.WriteLine(grade);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام
+                        <strong>Convert.ToChar()</strong>
+                        لتحويل الإدخال إلى حرف واحد.
+                    </p>
+
+                </div>
+
+
+                <!-- Input and Output -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-right-left"></i>
+                        Input and Output
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Enter your name: ");
+
+string name = Console.ReadLine();
+
+Console.WriteLine("Hello " + name);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام الـ Input مع الـ Output لإنشاء
+                        برنامج يتفاعل مع المستخدم.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Console.ReadLine()</strong>
+                            <span dir="rtl">
+                                تستخدم لقراءة الإدخال من المستخدم.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Convert.ToInt32()</strong>
+                            <span dir="rtl">
+                                تحول الإدخال إلى عدد صحيح.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Convert.ToBoolean()</strong>
+                            <span dir="rtl">
+                                تحول الإدخال إلى true أو false.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Convert.ToChar()</strong>
+                            <span dir="rtl">
+                                تحول الإدخال إلى حرف.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+
+    <script src="theme.js"></script>
+</body>
+
+</html>

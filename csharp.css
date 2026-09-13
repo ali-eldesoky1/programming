@@ -1,0 +1,407 @@
+/* ==============================
+   General
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background:
+        radial-gradient(circle at top right, #3b3228, transparent 35%),
+        radial-gradient(circle at bottom left, #292621, transparent 35%),
+        #151515;
+    color: #f2f2f2;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   Header
+============================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(25, 25, 25, 0.75);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(214, 185, 140, 0.15);
+}
+
+nav {
+    width: min(1200px, 90%);
+    margin: auto;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #f2f2f2;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #d6b98c;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Hero
+============================== */
+
+.hero {
+    width: min(1200px, 90%);
+    margin: 70px auto 40px;
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(214, 185, 140, 0.15);
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-small {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #d6b98c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 80px);
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #c7c7c7;
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+/* ==============================
+   Search
+============================== */
+
+.search-section {
+    width: min(900px, 90%);
+    margin: 0 auto 70px;
+}
+
+.search-box {
+    display: flex;
+    gap: 12px;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(214, 185, 140, 0.15);
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+}
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 15px 18px;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.search-box input::placeholder {
+    color: #999999;
+}
+
+.search-box button {
+    border: none;
+    border-radius: 12px;
+
+    padding: 0 25px;
+
+    background: #d6b98c;
+    color: #171717;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(214, 185, 140, 0.2);
+}
+
+
+/* ==============================
+   Dictionary Section
+============================== */
+
+.dictionary-section {
+    width: min(1200px, 90%);
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #d6b98c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #aaa;
+    line-height: 1.9;
+}
+
+
+/* ==============================
+   Cards
+============================== */
+
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.main-card {
+    position: relative;
+
+    display: block;
+
+    padding: 28px;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(214, 185, 140, 0.12);
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+    overflow: hidden;
+}
+
+.main-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(214, 185, 140, 0.08),
+        transparent
+    );
+
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.main-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(214, 185, 140, 0.35);
+}
+
+.main-card:hover::before {
+    opacity: 1;
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(214, 185, 140, 0.12);
+    color: #d6b98c;
+
+    font-size: 22px;
+}
+
+.main-card h3 {
+    position: relative;
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.main-card p {
+    position: relative;
+
+    color: #bdbdbd;
+    line-height: 1.9;
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+.card-link {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #d6b98c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-link i {
+    transition: 0.3s ease;
+}
+
+.main-card:hover .card-link i {
+    transform: translateX(-5px);
+}
+
+
+/* ==============================
+   Footer
+============================== */
+
+footer {
+    margin-top: 20px;
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(214, 185, 140, 0.1);
+
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        gap: 14px;
+    }
+
+    .dictionary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        margin-top: 30px;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        min-height: 50px;
+    }
+
+    .dictionary-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Output | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Output</h1>
+
+                    <p dir="rtl">
+                        الـ Output يستخدم لعرض البيانات والنتائج
+                        على شاشة الـ Console.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Output</strong> هو عرض البيانات أو
+                        الرسائل التي ينتجها البرنامج للمستخدم.
+                    </p>
+
+                    <p dir="rtl">
+                        في C# نستخدم بشكل أساسي
+                        <strong>Console.Write()</strong>
+                        و
+                        <strong>Console.WriteLine()</strong>
+                        لعرض البيانات في الـ Console.
+                    </p>
+
+                </div>
+
+
+                <!-- WriteLine -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Console.WriteLine()
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.WriteLine("Hello World");</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>Console.WriteLine()</strong>
+                        لطباعة البيانات ثم الانتقال إلى سطر جديد.
+                    </p>
+
+                </div>
+
+
+                <!-- Write -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-terminal"></i>
+                        Console.Write()
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.Write("Hello ");
+Console.Write("World");</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>Console.Write()</strong>
+                        لطباعة البيانات دون الانتقال إلى سطر جديد.
+                    </p>
+
+                </div>
+
+
+                <!-- Difference -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-compare"></i>
+                        Write vs WriteLine
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Console.Write()</strong>
+                            <span dir="rtl">
+                                تطبع البيانات وتبقى في نفس السطر.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Console.WriteLine()</strong>
+                            <span dir="rtl">
+                                تطبع البيانات ثم تنتقل إلى سطر جديد.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Variables -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-box"></i>
+                        Output with Variable
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>string name = "Ammar";
+int age = 16;
+
+Console.WriteLine(name);
+Console.WriteLine(age);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام الـ Output لعرض القيم المخزنة
+                        داخل المتغيرات.
+                    </p>
+
+                </div>
+
+
+                <!-- Multiple Output -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Multiple Output
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Console.WriteLine("Name: Ammar");
+Console.WriteLine("Age: 16");
+Console.WriteLine("Student: True");</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام أكثر من أمر طباعة لعرض عدة
+                        بيانات للمستخدم.
+                    </p>
+
+                </div>
+
+
+                <!-- Concatenation -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-link"></i>
+                        Concatenation
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>string name = "Ammar";
+int age = 16;
+
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Age: " + age);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن دمج النصوص مع قيم المتغيرات باستخدام
+                        علامة
+                        <strong>+</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Write()</strong>
+                            <span dir="rtl">
+                                تطبع في نفس السطر.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>WriteLine()</strong>
+                            <span dir="rtl">
+                                تطبع ثم تنتقل إلى سطر جديد.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Console</strong>
+                            <span dir="rtl">
+                                تستخدم للتعامل مع شاشة الـ Console.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>+</strong>
+                            <span dir="rtl">
+                                يمكن استخدامه لدمج النصوص مع القيم.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

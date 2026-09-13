@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Code Dictionary | BOM</title>
+
+</head>
+
+<body>
+
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+                
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <a href="javascript.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to JavaScript Terms
+        </a>
+
+
+        <section class="term-page">
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-window-maximize"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">
+                        JavaScript Term
+                    </span>
+
+                    <h1>
+                        BOM
+                    </h1>
+
+                    <p>
+                        Browser Object Model
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="content">
+
+                <div class="definition">
+
+                    <span class="label">
+                        Definition
+                    </span>
+
+                    <h2>
+                        BOM  ما هو الـ
+                    </h2>
+
+                    <p dir="rtl">
+                        BOM اختصار لـ Browser Object Model،
+                        وهو مجموعة من الكائنات التي يوفرها المتصفح
+                        للتعامل مع نافذة المتصفح ومعلوماتها.
+                    </p>
+
+                </div>
+
+
+                <div class="example">
+
+                    <span class="label">
+                        Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>window.alert("Hello World");</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="explanation">
+
+                    <span class="label">
+                        Explanation
+                    </span>
+
+                    <p dir="rtl">
+                        في المثال السابق استخدمنا
+                        <strong>window</strong>
+                        للوصول إلى نافذة المتصفح.
+                    </p>
+
+                    <p dir="rtl">
+                        ثم استخدمنا
+                        <strong>alert()</strong>
+                        لإظهار رسالة للمستخدم.
+                    </p>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Common BOM Objects
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>window</strong>
+                            <span>يمثل نافذة المتصفح</span>
+                        </div>
+
+                        <div>
+                            <strong>location</strong>
+                            <span>الوصول إلى معلومات عنوان الصفحة والتنقل</span>
+                        </div>
+
+                        <div>
+                            <strong>history</strong>
+                            <span>التعامل مع سجل التصفح</span>
+                        </div>
+
+                        <div>
+                            <strong>navigator</strong>
+                            <span>الوصول إلى معلومات عن المتصفح</span>
+                        </div>
+
+                        <div>
+                            <strong>screen</strong>
+                            <span>الوصول إلى معلومات عن شاشة المستخدم</span>
+                        </div>
+
+                        <div>
+                            <strong>document</strong>
+                            <span>يمثل صفحة HTML ويتم التعامل معه غالبًا عبر DOM</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Location Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>console.log(location.href);</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        History Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>history.back();</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        BOM vs DOM
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>BOM</strong>
+                            <span>التعامل مع المتصفح ونافذته</span>
+                        </div>
+
+                        <div>
+                            <strong>DOM</strong>
+                            <span>التعامل مع عناصر صفحة HTML</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Code Dictionary | Programming Loop</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <a href="programming.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Programming Basics
+        </a>
+
+
+        <section class="term-page">
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">
+                        Programming Term
+                    </span>
+
+                    <h1>
+                        Loop
+                    </h1>
+
+                    <p>
+                        حلقة التكرار
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="content">
+
+
+                <div class="definition">
+
+                    <span class="label">
+                        Definition
+                    </span>
+
+                    <h2>
+                        Loop ما هي الـ
+                    </h2>
+
+                    <p dir="rtl">
+                        الـ Loop هي طريقة تستخدم لتكرار مجموعة من
+                        التعليمات البرمجية أكثر من مرة حسب شرط أو عدد محدد.
+                    </p>
+
+                </div>
+
+
+                <div class="example">
+
+                    <span class="label">
+                        General Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Start
+  ↓
+Repeat Instructions
+  ↓
+Check Condition
+  ↓
+Continue or Stop</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="explanation">
+
+                    <span class="label">
+                        Explanation
+                    </span>
+
+                    <p dir="rtl">
+                        بدلًا من كتابة نفس الكود عدة مرات،
+                        نستخدم Loop لتكرار التعليمات تلقائيًا.
+                    </p>
+
+                    <p dir="rtl">
+                        تستمر الحلقة في التنفيذ حتى يتحقق شرط التوقف
+                        أو ينتهي العدد المحدد من التكرارات.
+                    </p>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Common Loops
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>for</strong>
+                            <span>تكرار الكود بعدد أو شرط محدد</span>
+                        </div>
+
+                        <div>
+                            <strong>while</strong>
+                            <span>التكرار طالما الشرط صحيح</span>
+                        </div>
+
+                        <div>
+                            <strong>do...while</strong>
+                            <span>تنفيذ الكود مرة واحدة على الأقل ثم فحص الشرط</span>
+                        </div>
+
+                        <div>
+                            <strong>for...of</strong>
+                            <span>التكرار على القيم في العناصر القابلة للتكرار</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Example in C#
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (int i = 1; i &lt;= 5; i++)
+{
+    Console.WriteLine(i);
+}</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Example in JavaScript
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (let i = 1; i &lt;= 5; i++) {
+    console.log(i);
+}</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Loop Structure
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Start</strong>
+                            <span>تحديد قيمة البداية</span>
+                        </div>
+
+                        <div>
+                            <strong>Condition</strong>
+                            <span>تحديد متى يستمر التكرار</span>
+                        </div>
+
+                        <div>
+                            <strong>Update</strong>
+                            <span>تغيير قيمة المتغير في كل دورة</span>
+                        </div>
+
+                        <div>
+                            <strong>Body</strong>
+                            <span>التعليمات التي يتم تكرارها</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="common">
+
+                    <span class="label">
+                        Why Are Loops Important?
+                    </span>
+
+                    <p dir="rtl">
+                        الحلقات تقلل تكرار الكود وتسمح بتنفيذ نفس
+                        المهمة لعدد كبير من العناصر أو المرات بسهولة.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

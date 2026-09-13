@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Array | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+                
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Array</h1>
+
+                    <p dir="rtl">
+                        الـ Array تستخدم لتخزين مجموعة من القيم
+                        من نفس نوع البيانات داخل متغير واحد.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Array</strong> هي مجموعة من العناصر
+                        من نفس نوع البيانات يتم تخزينها داخل متغير واحد.
+                    </p>
+
+                    <p dir="rtl">
+                        يمكن الوصول إلى كل عنصر داخل الـ Array باستخدام
+                        <strong>Index</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Create Array -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Create an Array
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int[] numbers = { 10, 20, 30, 40, 50 };
+
+Console.WriteLine(numbers[0]);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        أنشأنا Array باسم
+                        <strong>numbers</strong>
+                        تحتوي على خمسة أرقام.
+                    </p>
+
+                </div>
+
+
+                <!-- Index -->
+
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list-ol"></i>
+                        Index
+                    </span>
+
+                    <p dir="rtl">
+                        يبدأ الـ <strong>Index</strong> في C# من الرقم
+                        <strong>0</strong>.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int[] numbers = { 10, 20, 30 };
+
+Console.WriteLine(numbers[0]);
+Console.WriteLine(numbers[1]);
+Console.WriteLine(numbers[2]);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        لذلك:
+                        <strong>numbers[0]</strong> تساوي 10،
+                        و<strong>numbers[1]</strong> تساوي 20،
+                        و<strong>numbers[2]</strong> تساوي 30.
+                    </p>
+
+                </div>
+
+
+                <!-- String Array -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-font"></i>
+                        String Array
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>string[] names = {
+    "Ali",
+    "Ahmed",
+    "Omar"
+};
+
+Console.WriteLine(names[0]);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن إنشاء Array من نوع
+                        <strong>string</strong>
+                        لتخزين مجموعة من النصوص.
+                    </p>
+
+                </div>
+
+
+                <!-- Change Value -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-pen"></i>
+                        Change Value
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int[] numbers = { 10, 20, 30 };
+
+numbers[1] = 50;
+
+Console.WriteLine(numbers[1]);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن تغيير قيمة عنصر داخل الـ Array
+                        باستخدام الـ Index الخاص به.
+                    </p>
+
+                </div>
+
+
+                <!-- Array Length -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-ruler-horizontal"></i>
+                        Length
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int[] numbers = { 10, 20, 30, 40, 50 };
+
+Console.WriteLine(numbers.Length);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        الخاصية <strong>Length</strong> تستخدم لمعرفة
+                        عدد العناصر الموجودة داخل الـ Array.
+                    </p>
+
+                </div>
+
+
+                <!-- Loop with Array -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-repeat"></i>
+                        Loop with Array
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int[] numbers = { 10, 20, 30, 40, 50 };
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine(numbers[i]);
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام الـ <strong>for loop</strong>
+                        للمرور على جميع العناصر الموجودة داخل الـ Array.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Array</strong>
+                            <span dir="rtl">
+                                تخزن مجموعة من القيم من نفس النوع.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Index</strong>
+                            <span dir="rtl">
+                                يبدأ من 0.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Length</strong>
+                            <span dir="rtl">
+                                تعطي عدد العناصر الموجودة في الـ Array.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>int[]</strong>
+                            <span dir="rtl">
+                                تستخدم لإنشاء Array من الأعداد الصحيحة.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

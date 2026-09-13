@@ -1,0 +1,279 @@
+/* ==============================
+   General
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        radial-gradient(circle at top right, #3b3228, transparent 35%),
+        radial-gradient(circle at bottom left, #292621, transparent 35%),
+        #151515;
+
+    color: #f2f2f2;
+}
+
+
+/* ==============================
+   Header
+============================== */
+
+header {
+    background: rgba(25, 25, 25, 0.75);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(214, 185, 140, 0.15);
+}
+
+nav {
+    width: min(1200px, 90%);
+
+    min-height: 75px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #d6b98c;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: #d7d7d7;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Main
+============================== */
+
+main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: min(1000px, 90%);
+
+    margin: auto;
+}
+
+
+/* ==============================
+   Error Page
+============================== */
+
+.error-page {
+    width: 100%;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(214, 185, 140, 0.15);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.error-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: rgba(214, 185, 140, 0.12);
+
+    color: #d6b98c;
+
+    font-size: 30px;
+}
+
+.error-page > span {
+    color: #d6b98c;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.error-page h1 {
+    margin: 10px 0;
+
+    font-size: clamp(100px, 20vw, 180px);
+
+    line-height: 1;
+
+    letter-spacing: 8px;
+}
+
+.error-page h1 span {
+    color: #d6b98c;
+}
+
+.error-page h2 {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+}
+
+.error-page p {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #bdbdbd;
+
+    line-height: 2;
+
+    font-size: 15px;
+}
+
+
+/* ==============================
+   Home Button
+============================== */
+
+.home-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    padding: 0 25px;
+
+    border-radius: 14px;
+
+    background: #d6b98c;
+
+    color: #171717;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(214, 185, 140, 0.2);
+}
+
+
+/* ==============================
+   Footer
+============================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border-top: 1px solid rgba(214, 185, 140, 0.1);
+
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        padding: 18px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .error-page {
+        padding: 50px 20px;
+    }
+
+    .error-page h1 {
+        font-size: 110px;
+    }
+
+    .error-page h2 {
+        font-size: 23px;
+    }
+
+}

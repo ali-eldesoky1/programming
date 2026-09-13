@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dictionary | Python</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Dictionary</h1>
+
+                    <p dir="rtl">
+                        الـ Dictionary تستخدم لتخزين البيانات
+                        في صورة Key و Value.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Dictionary</strong> هي نوع من أنواع
+                        البيانات في Python، وتستخدم لتخزين البيانات
+                        على شكل أزواج من
+                        <strong>Key</strong>
+                        و
+                        <strong>Value</strong>.
+                    </p>
+
+                    <p dir="rtl">
+                        كل Key يتم ربطه بقيمة معينة يمكن الوصول إليها
+                        باستخدام اسم الـ Key.
+                    </p>
+
+                </div>
+
+
+                <!-- Example -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>student = {
+    "name": "Ammar",
+    "age": 16,
+    "grade": "Second Secondary"
+}
+
+print(student)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في المثال السابق أنشأنا Dictionary باسم
+                        <strong>student</strong>
+                        وتحتوي على بيانات الطالب.
+                    </p>
+
+                </div>
+
+
+                <!-- Key and Value -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Key & Value
+                    </span>
+
+                    <p dir="rtl">
+                        في هذا السطر:
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>"name": "Ammar"</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        <strong>name</strong>
+                        هو الـ Key،
+                        بينما
+                        <strong>Ammar</strong>
+                        هي الـ Value.
+                    </p>
+
+                </div>
+
+
+                <!-- Access Value -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Access Value
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>student = {
+    "name": "Ammar",
+    "age": 16
+}
+
+print(student["name"])
+print(student["age"])</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        للوصول إلى قيمة معينة نكتب اسم الـ
+                        <strong>Key</strong>
+                        داخل الأقواس المربعة
+                        <strong>[ ]</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Modify -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-pen"></i>
+                        Modify
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>student = {
+    "name": "Ammar",
+    "age": 16
+}
+
+student["age"] = 17
+
+print(student)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن تعديل قيمة موجودة عن طريق كتابة
+                        الـ <strong>Key</strong>
+                        ثم إعطائه قيمة جديدة.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Key</strong>
+                            <span>اسم أو مفتاح نستخدمه للوصول إلى البيانات.</span>
+                        </div>
+
+                        <div>
+                            <strong>Value</strong>
+                            <span>القيمة المرتبطة بالـ Key.</span>
+                        </div>
+
+                        <div>
+                            <strong>{ }</strong>
+                            <span>تستخدم لإنشاء Dictionary.</span>
+                        </div>
+
+                        <div>
+                            <strong>[ ]</strong>
+                            <span>تستخدم للوصول إلى قيمة باستخدام الـ Key.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Multiple Data -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-database"></i>
+                        Multiple Data
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>car = {
+    "brand": "BMW",
+    "model": "M4",
+    "year": 2025
+}
+
+print(car["brand"])
+print(car["model"])
+print(car["year"])</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن للـ Dictionary تخزين عدة بيانات مختلفة
+                        داخل نفس المتغير باستخدام Keys مختلفة.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

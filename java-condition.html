@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Condition | Java | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="java.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Java
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Java</span>
+
+                    <h1>Condition</h1>
+
+                    <p dir="rtl">
+                        الـ Condition تستخدم لاتخاذ قرار معين
+                        بناءً على نتيجة الشرط.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Condition</strong> هي عبارة شرطية
+                        تجعل البرنامج ينفذ أوامر مختلفة حسب نتيجة
+                        الشرط.
+                    </p>
+
+                    <p dir="rtl">
+                        في Java نستخدم بشكل أساسي
+                        <strong>if</strong> و
+                        <strong>else if</strong> و
+                        <strong>else</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- If -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        If Statement
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int age = 18;
+
+if (age &gt;= 18) {
+    System.out.println("Adult");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        إذا كان الشرط
+                        <strong>age &gt;= 18</strong>
+                        صحيحًا، يتم تنفيذ الكود الموجود داخل
+                        <strong>if</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- If Else -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-branch"></i>
+                        If / Else
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int age = 16;
+
+if (age &gt;= 18) {
+    System.out.println("Adult");
+} else {
+    System.out.println("Not Adult");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        إذا كان الشرط صحيحًا يتم تنفيذ
+                        <strong>if</strong>،
+                        وإذا كان غير صحيح يتم تنفيذ
+                        <strong>else</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Else If -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list-check"></i>
+                        Else If
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int grade = 85;
+
+if (grade &gt;= 90) {
+    System.out.println("Excellent");
+} else if (grade &gt;= 75) {
+    System.out.println("Very Good");
+} else {
+    System.out.println("Good");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        نستخدم
+                        <strong>else if</strong>
+                        لاختبار شرط إضافي بعد الشرط الأول.
+                    </p>
+
+                </div>
+
+
+                <!-- Comparison Operators -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        Comparison Operators
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>==</strong>
+                            <span dir="rtl">
+                                يساوي.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>!=</strong>
+                            <span dir="rtl">
+                                لا يساوي.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>&gt;</strong>
+                            <span dir="rtl">
+                                أكبر من.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>&lt;</strong>
+                            <span dir="rtl">
+                                أصغر من.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>&gt;=</strong>
+                            <span dir="rtl">
+                                أكبر من أو يساوي.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>&lt;=</strong>
+                            <span dir="rtl">
+                                أصغر من أو يساوي.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Multiple Conditions -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-branch"></i>
+                        Multiple Conditions
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int age = 20;
+boolean hasId = true;
+
+if (age &gt;= 18 &amp;&amp; hasId) {
+    System.out.println("Access Granted");
+} else {
+    System.out.println("Access Denied");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام أكثر من شرط معًا باستخدام
+                        <strong>&amp;&amp;</strong>
+                        و
+                        <strong>||</strong>
+                        للحصول على قرار أكثر دقة.
+                    </p>
+
+                </div>
+
+
+                <!-- Logical Operators -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-brain"></i>
+                        Logical Operators
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>&amp;&amp;</strong>
+                            <span dir="rtl">
+                                AND: يجب أن يكون الشرطان صحيحين.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>||</strong>
+                            <span dir="rtl">
+                                OR: يكفي أن يكون أحد الشرطين صحيحًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>!</strong>
+                            <span dir="rtl">
+                                NOT: تعكس القيمة المنطقية.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Practical Example -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-terminal"></i>
+                        Practical Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int mark = 80;
+
+if (mark &gt;= 50) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        إذا كانت الدرجة 50 أو أكثر تكون النتيجة
+                        <strong>Pass</strong>،
+                        وإلا تكون
+                        <strong>Fail</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>if</strong>
+                            <span dir="rtl">
+                                لاختبار الشرط الأساسي.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>else if</strong>
+                            <span dir="rtl">
+                                لاختبار شرط إضافي.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>else</strong>
+                            <span dir="rtl">
+                                تعمل عندما تكون الشروط السابقة غير صحيحة.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Boolean Result</strong>
+                            <span dir="rtl">
+                                نتيجة المقارنة تكون true أو false.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

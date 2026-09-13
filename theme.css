@@ -1,0 +1,93 @@
+/* ==============================
+   Theme Button
+============================== */
+
+.theme-btn {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(214, 185, 140, 0.2);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: #d6b98c;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(214, 185, 140, 0.45);
+}
+
+
+/* ==============================
+   Light Mode
+============================== */
+
+body.light-mode {
+    background:
+        radial-gradient(circle at top right, #eee4d4, transparent 35%),
+        radial-gradient(circle at bottom left, #ddd5c8, transparent 35%),
+        #f4f1eb;
+
+    color: #222;
+}
+
+body.light-mode header {
+    background: rgba(255, 255, 255, 0.75);
+    border-bottom-color: rgba(80, 70, 55, 0.12);
+}
+
+body.light-mode nav ul li a {
+    color: #444;
+}
+
+body.light-mode nav ul li a:hover {
+    color: #9b7b4f;
+}
+
+body.light-mode .logo {
+    color: #222;
+}
+
+body.light-mode .theme-btn {
+    background: rgba(0, 0, 0, 0.04);
+    color: #8c6d43;
+}
+
+body.light-mode .main-card,
+body.light-mode .term-card,
+body.light-mode .about-card,
+body.light-mode .contact-info,
+body.light-mode .contact-form,
+body.light-mode .category-card,
+body.light-mode .hero,
+body.light-mode .language-hero,
+body.light-mode .term-page {
+    background: rgba(255, 255, 255, 0.65);
+    border-color: rgba(80, 70, 55, 0.12);
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode .term-header h1 {
+    color: #222;
+}
+
+body.light-mode p {
+    color: #555;
+}
+
+body.light-mode footer {
+    background: rgba(0, 0, 0, 0.03);
+    color: #777;
+    border-top-color: rgba(80, 70, 55, 0.12);
+}

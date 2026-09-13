@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Input | Java | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="java.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Java
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-keyboard"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Java</span>
+
+                    <h1>Input</h1>
+
+                    <p dir="rtl">
+                        الـ Input يستخدم لاستقبال البيانات من
+                        المستخدم أثناء تشغيل البرنامج.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Input</strong> هو البيانات التي
+                        يدخلها المستخدم إلى البرنامج أثناء تشغيله.
+                    </p>
+
+                    <p dir="rtl">
+                        في Java يمكن استخدام
+                        <strong>Scanner</strong>
+                        لقراءة البيانات من لوحة المفاتيح.
+                    </p>
+
+                </div>
+
+
+                <!-- Scanner -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-keyboard"></i>
+                        Scanner
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>import java.util.Scanner;
+
+Scanner input = new Scanner(System.in);
+
+System.out.print("Enter your name: ");
+
+String name = input.nextLine();
+
+System.out.println(name);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        نستخدم <strong>Scanner</strong> لقراءة البيانات
+                        التي يكتبها المستخدم من لوحة المفاتيح.
+                    </p>
+
+                </div>
+
+
+                <!-- String Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-font"></i>
+                        String Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Enter your name: ");
+
+String name = input.nextLine();</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>nextLine()</strong>
+                        لقراءة سطر كامل من النص.
+                    </p>
+
+                </div>
+
+
+                <!-- Integer Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-hashtag"></i>
+                        Integer Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Enter your age: ");
+
+int age = input.nextInt();
+
+System.out.println(age);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>nextInt()</strong>
+                        لقراءة عدد صحيح من المستخدم.
+                    </p>
+
+                </div>
+
+
+                <!-- Double Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-divide"></i>
+                        Double Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Enter price: ");
+
+double price = input.nextDouble();
+
+System.out.println(price);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>nextDouble()</strong>
+                        لقراءة عدد عشري.
+                    </p>
+
+                </div>
+
+
+                <!-- Boolean Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-check"></i>
+                        Boolean Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Are you a student? ");
+
+boolean isStudent = input.nextBoolean();
+
+System.out.println(isStudent);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم
+                        <strong>nextBoolean()</strong>
+                        لقراءة قيمة منطقية مثل
+                        <strong>true</strong>
+                        أو
+                        <strong>false</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Char Input -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-a"></i>
+                        Char Input
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Enter your grade: ");
+
+char grade = input.next().charAt(0);
+
+System.out.println(grade);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن قراءة حرف واحد باستخدام
+                        <strong>next()</strong>
+                        ثم
+                        <strong>charAt(0)</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Input and Output -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-right-left"></i>
+                        Input and Output
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>Scanner input = new Scanner(System.in);
+
+System.out.print("Enter your name: ");
+
+String name = input.nextLine();
+
+System.out.println("Hello " + name);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام الـ Input مع الـ Output لإنشاء
+                        برنامج يتفاعل مع المستخدم.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Scanner</strong>
+                            <span dir="rtl">
+                                تستخدم لقراءة البيانات من المستخدم.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>nextLine()</strong>
+                            <span dir="rtl">
+                                تقرأ سطرًا كاملًا من النص.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>nextInt()</strong>
+                            <span dir="rtl">
+                                تقرأ عددًا صحيحًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>nextDouble()</strong>
+                            <span dir="rtl">
+                                تقرأ عددًا عشريًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>nextBoolean()</strong>
+                            <span dir="rtl">
+                                تقرأ قيمة true أو false.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

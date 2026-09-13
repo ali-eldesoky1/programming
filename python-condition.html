@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Condition | Python</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <button class="theme-btn" id="themeBtn">
+    <i class="fa-solid fa-moon"></i>
+</button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Condition</h1>
+
+                    <p dir="rtl">
+                        الـ Condition تستخدم لاتخاذ قرار معين
+                        بناءً على تحقق شرط من عدمه.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Condition</strong> هي عبارة شرطية
+                        تستخدم لجعل البرنامج يتصرف بطريقة مختلفة
+                        حسب نتيجة الشرط.
+                    </p>
+
+                    <p dir="rtl">
+                        في Python نستخدم بشكل أساسي
+                        <strong>if</strong> و
+                        <strong>elif</strong> و
+                        <strong>else</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- If -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        If Statement
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>age = 18
+
+if age >= 18:
+    print("Adult")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        إذا كان الشرط
+                        <strong>age >= 18</strong>
+                        صحيحًا، فسيتم تنفيذ أمر الطباعة.
+                    </p>
+
+                </div>
+
+
+                <!-- Explanation -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Explanation
+                    </span>
+
+                    <p dir="rtl">
+                        نستخدم <strong>if</strong> لاختبار الشرط.
+                    </p>
+
+                    <p dir="rtl">
+                        إذا كانت نتيجة الشرط
+                        <strong>True</strong>
+                        يتم تنفيذ الكود الموجود داخل الـ if.
+                    </p>
+
+                    <p dir="rtl">
+                        أما إذا كانت النتيجة
+                        <strong>False</strong>
+                        فلن يتم تنفيذ هذا الجزء.
+                    </p>
+
+                </div>
+
+
+                <!-- If Else -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-branch"></i>
+                        If / Else
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>age = 16
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Not Adult")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا إذا كان الشرط صحيحًا يتم تنفيذ جزء
+                        <strong>if</strong>، وإذا كان غير صحيح يتم تنفيذ
+                        جزء <strong>else</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Elif -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list-check"></i>
+                        Elif
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>grade = 85
+
+if grade >= 90:
+    print("Excellent")
+elif grade >= 75:
+    print("Very Good")
+else:
+    print("Good")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        نستخدم <strong>elif</strong> عندما نريد اختبار
+                        شرط إضافي بعد الشرط الأول.
+                    </p>
+
+                </div>
+
+
+                <!-- Comparison Operators -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        Comparison Operators
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>==</strong>
+                            <span>للمقارنة بين قيمتين ومعرفة هل هما متساويتان.</span>
+                        </div>
+
+                        <div>
+                            <strong>!=</strong>
+                            <span>للتأكد من أن القيمتين غير متساويتين.</span>
+                        </div>
+
+                        <div>
+                            <strong>&gt;</strong>
+                            <span>أكبر من.</span>
+                        </div>
+
+                        <div>
+                            <strong>&lt;</strong>
+                            <span>أصغر من.</span>
+                        </div>
+
+                        <div>
+                            <strong>&gt;=</strong>
+                            <span>أكبر من أو يساوي.</span>
+                        </div>
+
+                        <div>
+                            <strong>&lt;=</strong>
+                            <span>أصغر من أو يساوي.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Multiple Conditions -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-branch"></i>
+                        Multiple Conditions
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>age = 20
+has_id = True
+
+if age >= 18 and has_id:
+    print("Access Granted")
+else:
+    print("Access Denied")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن استخدام أكثر من شرط معًا باستخدام
+                        <strong>and</strong> و
+                        <strong>or</strong>
+                        للحصول على قرارات أكثر دقة.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>if</strong>
+                            <span>تستخدم لاختبار الشرط الأساسي.</span>
+                        </div>
+
+                        <div>
+                            <strong>elif</strong>
+                            <span>تستخدم لاختبار شرط إضافي.</span>
+                        </div>
+
+                        <div>
+                            <strong>else</strong>
+                            <span>تعمل عندما تكون الشروط السابقة False.</span>
+                        </div>
+
+                        <div>
+                            <strong>Indentation</strong>
+                            <span>المسافة البادئة تحدد الكود الموجود داخل الشرط.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

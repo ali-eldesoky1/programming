@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: 'Cairo', sans-serif;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(214, 185, 140, 0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(214, 185, 140, 0.08),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #202020,
+            #3b3b3b,
+            #242424
+        );
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    padding: 20px 7%;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #d6b98c;
+}
+
+
+/* Navigation */
+
+ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    list-style: none;
+}
+
+
+ul a {
+    color: #dddddd;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+ul a:hover {
+    color: #d6b98c;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 35px 25px 80px;
+}
+
+
+/* Back */
+
+.back {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: #d6b98c;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   Term Page
+========================= */
+
+.term-page {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+}
+
+
+/* Term Header */
+
+.term-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.term-icon {
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    background: rgba(214, 185, 140, 0.11);
+
+    color: #d6b98c;
+
+    font-size: 35px;
+}
+
+
+.category {
+    color: #d6b98c;
+
+    font-size: 12px;
+}
+
+
+.term-header h1 {
+    margin: 4px 0;
+
+    font-size: 38px;
+}
+
+
+.term-header p {
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+/* Content */
+
+.content {
+    padding: 35px;
+}
+
+
+/* Label */
+
+.label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #d6b98c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Definition */
+
+.definition {
+    margin-bottom: 35px;
+}
+
+
+.definition h2 {
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+
+.definition p,
+.explanation p {
+    color: #c2c2c2;
+
+    font-size: 15px;
+
+    line-height: 2;
+}
+
+
+/* Example */
+
+.example {
+    margin-bottom: 35px;
+}
+
+
+/* Code Box */
+
+.code-box {
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 15px;
+
+    background: #171717;
+}
+
+
+.code-top {
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 0 15px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.code-top span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #777777;
+}
+
+
+pre {
+    padding: 25px;
+
+    overflow-x: auto;
+}
+
+
+code {
+    color: #d6b98c;
+
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+
+/* Explanation */
+
+.explanation {
+    margin-bottom: 35px;
+}
+
+
+/* Strong */
+
+.explanation strong {
+    color: #d6b98c;
+}
+
+
+/* Common Attributes */
+
+.common {
+    margin-bottom: 5px;
+}
+
+
+.attribute-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+
+.attribute-list div {
+    padding: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+.attribute-list strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d6b98c;
+
+    font-family: Consolas, monospace;
+
+    font-size: 15px;
+}
+
+
+.attribute-list span {
+    color: #999999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 15px;
+    }
+
+
+    nav {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    ul {
+        gap: 16px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    ul a {
+        font-size: 13px;
+    }
+
+
+    main {
+        padding: 30px 15px 60px;
+    }
+
+
+    .term-header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+
+    .term-header h1 {
+        font-size: 32px;
+    }
+
+
+    .content {
+        padding: 25px 20px;
+    }
+
+
+    .attribute-list {
+        grid-template-columns: 1fr;
+    }
+}

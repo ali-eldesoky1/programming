@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Exception | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Exception</h1>
+
+                    <p dir="rtl">
+                        الـ Exception هي مشكلة تحدث أثناء تشغيل البرنامج
+                        ويمكن التعامل معها باستخدام try و catch.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Exception</strong> هو خطأ يحدث أثناء
+                        تشغيل البرنامج وقد يمنع البرنامج من إكمال التنفيذ
+                        بشكل طبيعي.
+                    </p>
+
+                    <p dir="rtl">
+                        يمكن التعامل مع هذه الأخطاء باستخدام
+                        <strong>try</strong> و
+                        <strong>catch</strong>
+                        بدلًا من توقف البرنامج بشكل مفاجئ.
+                    </p>
+
+                </div>
+
+
+                <!-- Example -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-bug"></i>
+                        Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int number = 10;
+
+Console.WriteLine(number / 0);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في هذا المثال نحاول القسمة على صفر،
+                        وهذا يؤدي إلى حدوث
+                        <strong>Exception</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Try Catch -->
+
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Try / Catch
+                    </span>
+
+                    <p dir="rtl">
+                        نستخدم <strong>try</strong> لوضع الكود الذي قد
+                        يحدث فيه خطأ، ونستخدم <strong>catch</strong>
+                        للتعامل مع الخطأ إذا حدث.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try
+{
+    int number = 10;
+    int result = number / 0;
+
+    Console.WriteLine(result);
+}
+catch
+{
+    Console.WriteLine("An error occurred");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        إذا حدث خطأ داخل
+                        <strong>try</strong>
+                        يتم تنفيذ الكود الموجود داخل
+                        <strong>catch</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Specific Exception -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-filter"></i>
+                        Specific Exception
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try
+{
+    int number = int.Parse("Hello");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Invalid format");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن تحديد نوع معين من الأخطاء، مثل
+                        <strong>FormatException</strong>
+                        عندما تكون صيغة البيانات غير صحيحة.
+                    </p>
+
+                </div>
+
+
+                <!-- Finally -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        Finally
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try
+{
+    Console.WriteLine("Start");
+}
+catch
+{
+    Console.WriteLine("Error");
+}
+finally
+{
+    Console.WriteLine("Finished");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يتم تنفيذ <strong>finally</strong> سواء حدث
+                        Exception أم لم يحدث.
+                    </p>
+
+                </div>
+
+
+                <!-- Common Exceptions -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list"></i>
+                        Common Exceptions
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>DivideByZeroException</strong>
+                            <span dir="rtl">
+                                تحدث عند محاولة القسمة على صفر.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>FormatException</strong>
+                            <span dir="rtl">
+                                تحدث عندما تكون صيغة البيانات غير صحيحة.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>IndexOutOfRangeException</strong>
+                            <span dir="rtl">
+                                تحدث عند محاولة الوصول إلى Index غير موجود.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Exception</strong>
+                            <span dir="rtl">
+                                نوع عام يمكن استخدامه للتعامل مع الأخطاء.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Practical Example -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-terminal"></i>
+                        Practical Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try
+{
+    Console.Write("Enter a number: ");
+
+    int number = Convert.ToInt32(
+        Console.ReadLine()
+    );
+
+    Console.WriteLine(number);
+}
+catch (FormatException)
+{
+    Console.WriteLine("Please enter a valid number");
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا إذا أدخل المستخدم رقمًا صحيحًا يعمل البرنامج
+                        بشكل طبيعي، وإذا أدخل قيمة غير رقمية يتم التعامل
+                        مع الخطأ باستخدام <strong>catch</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>try</strong>
+                            <span dir="rtl">
+                                تحتوي على الكود الذي قد يحدث فيه خطأ.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>catch</strong>
+                            <span dir="rtl">
+                                تستخدم للتعامل مع الـ Exception.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>finally</strong>
+                            <span dir="rtl">
+                                يتم تنفيذها سواء حدث خطأ أم لا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Exception</strong>
+                            <span dir="rtl">
+                                تمثل مشكلة تحدث أثناء تنفيذ البرنامج.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

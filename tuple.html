@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tuple | Python</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Tuple</h1>
+
+                    <p dir="rtl">
+                        الـ Tuple تستخدم لتخزين مجموعة من العناصر
+                        في ترتيب ثابت لا يمكن تغييره بعد إنشائه.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Tuple</strong> هي نوع من أنواع
+                        البيانات في Python، وتستخدم لتخزين أكثر من قيمة
+                        داخل متغير واحد.
+                    </p>
+
+                    <p dir="rtl">
+                        تختلف عن الـ <strong>List</strong> في أن عناصر
+                        الـ Tuple لا يمكن تعديلها بعد إنشائها.
+                    </p>
+
+                </div>
+
+
+                <!-- Example -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>colors = ("Red", "Green", "Blue")
+
+print(colors)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في المثال السابق أنشأنا Tuple باسم
+                        <strong>colors</strong>
+                        وتحتوي على ثلاثة عناصر.
+                    </p>
+
+                </div>
+
+
+                <!-- Syntax -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Syntax
+                    </span>
+
+                    <p dir="rtl">
+                        يتم إنشاء الـ Tuple باستخدام
+                        <strong>( )</strong>
+                        بدلاً من
+                        <strong>[ ]</strong>
+                        المستخدمة مع الـ List.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>numbers = (10, 20, 30)</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Index -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list-ol"></i>
+                        Index
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>colors = ("Red", "Green", "Blue")
+
+print(colors[0])
+print(colors[1])
+print(colors[2])</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        مثل الـ List، يبدأ الـ
+                        <strong>Index</strong>
+                        من الرقم
+                        <strong>0</strong>.
+                    </p>
+
+                    <p dir="rtl">
+                        <strong>colors[0]</strong> → Red
+                        <br>
+                        <strong>colors[1]</strong> → Green
+                        <br>
+                        <strong>colors[2]</strong> → Blue
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>( )</strong>
+                            <span>تستخدم لإنشاء Tuple.</span>
+                        </div>
+
+                        <div>
+                            <strong>Ordered</strong>
+                            <span>العناصر لها ترتيب محدد.</span>
+                        </div>
+
+                        <div>
+                            <strong>Immutable</strong>
+                            <span>لا يمكن تعديل العناصر بعد الإنشاء.</span>
+                        </div>
+
+                        <div>
+                            <strong>Index</strong>
+                            <span>يبدأ من 0.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Difference -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code-compare"></i>
+                        List vs Tuple
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>my_list = ["Ali", "Ahmed"]
+my_tuple = ("Ali", "Ahmed")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        الـ <strong>List</strong> يمكن تعديل عناصرها،
+                        بينما الـ <strong>Tuple</strong> لا يمكن تعديل
+                        عناصرها بعد إنشائها.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

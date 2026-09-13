@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Function | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Function</h1>
+
+                    <p dir="rtl">
+                        الـ Function هي مجموعة من الأوامر البرمجية
+                        يتم تجميعها لتنفيذ مهمة معينة ويمكن استدعاؤها عند الحاجة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Function</strong> في C# هي جزء من
+                        البرنامج يحتوي على مجموعة من الأوامر البرمجية
+                        التي تنفذ مهمة محددة.
+                    </p>
+
+                    <p dir="rtl">
+                        استخدام Functions يساعد على تنظيم الكود
+                        وإعادة استخدامه بدلًا من كتابة نفس الأوامر أكثر من مرة.
+                    </p>
+
+                </div>
+
+
+                <!-- Basic Function -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Basic Function
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>static void SayHello()
+{
+    Console.WriteLine("Hello World");
+}
+
+SayHello();</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في المثال السابق أنشأنا Function باسم
+                        <strong>SayHello</strong>، ثم استدعيناها باستخدام
+                        <strong>SayHello()</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Explanation -->
+
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Explanation
+                    </span>
+
+                    <p dir="rtl">
+                        كلمة <strong>void</strong> تعني أن الـ Function
+                        لا ترجع قيمة.
+                    </p>
+
+                    <p dir="rtl">
+                        اسم الـ Function يمكن اختياره حسب المهمة التي
+                        تنفذها، مثل <strong>SayHello</strong>.
+                    </p>
+
+                    <p dir="rtl">
+                        الكود الموجود بين الأقواس
+                        <strong>{ }</strong>
+                        هو الكود الذي سيتم تنفيذه عند استدعاء الـ Function.
+                    </p>
+
+                </div>
+
+
+                <!-- Parameters -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-right-left"></i>
+                        Parameters
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>static void Greet(string name)
+{
+    Console.WriteLine("Hello " + name);
+}
+
+Greet("Ammar");</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن للـ Function استقبال بيانات تسمى
+                        <strong>Parameters</strong>، ثم استخدامها داخل
+                        الـ Function.
+                    </p>
+
+                </div>
+
+
+                <!-- Multiple Parameters -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Multiple Parameters
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>static void ShowInfo(string name, int age)
+{
+    Console.WriteLine(name);
+    Console.WriteLine(age);
+}
+
+ShowInfo("Ammar", 16);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن للـ Function استقبال أكثر من Parameter،
+                        وكل Parameter يمكن أن يكون له Data Type مختلف.
+                    </p>
+
+                </div>
+
+
+                <!-- Return -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-arrow-turn-up"></i>
+                        Return Value
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>static int Add(int a, int b)
+{
+    return a + b;
+}
+
+int result = Add(5, 3);
+
+Console.WriteLine(result);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن للـ Function إرجاع قيمة باستخدام
+                        <strong>return</strong>.
+                        وفي المثال السابق تقوم Function بإرجاع ناتج الجمع.
+                    </p>
+
+                </div>
+
+
+                <!-- Return Types -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        Return Types
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>void</strong>
+                            <span dir="rtl">
+                                Function لا ترجع قيمة.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>int</strong>
+                            <span dir="rtl">
+                                Function ترجع عددًا صحيحًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>string</strong>
+                            <span dir="rtl">
+                                Function ترجع نصًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>bool</strong>
+                            <span dir="rtl">
+                                Function ترجع true أو false.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Function</strong>
+                            <span dir="rtl">
+                                مجموعة أوامر لتنفيذ مهمة محددة.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Parameter</strong>
+                            <span dir="rtl">
+                                قيمة يتم استقبالها داخل الـ Function.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>return</strong>
+                            <span dir="rtl">
+                                تستخدم لإرجاع قيمة من الـ Function.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>void</strong>
+                            <span dir="rtl">
+                                تعني أن الـ Function لا ترجع قيمة.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

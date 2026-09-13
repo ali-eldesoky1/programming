@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="attribute.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Loop | C# | Code Dictionary</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <a href="csharp.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to C#
+        </a>
+
+
+        <section class="term-page">
+
+
+            <!-- Term Header -->
+
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">C#</span>
+
+                    <h1>Loop</h1>
+
+                    <p dir="rtl">
+                        الـ Loop تستخدم لتكرار تنفيذ مجموعة من الأوامر
+                        أكثر من مرة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- Definition -->
+
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Loop</strong> هي طريقة لتكرار
+                        مجموعة من التعليمات البرمجية عدة مرات
+                        بدلًا من كتابة نفس الكود بشكل متكرر.
+                    </p>
+
+                    <p dir="rtl">
+                        من أشهر أنواع الـ Loops في C#
+                        <strong>for</strong> و
+                        <strong>while</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- For Loop -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        For Loop
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine(i);
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يبدأ المتغير
+                        <strong>i</strong>
+                        من 1 ويستمر التكرار طالما أن
+                        <strong>i &lt;= 5</strong>،
+                        ثم تزيد قيمة
+                        <strong>i</strong>
+                        بمقدار 1 في كل مرة.
+                    </p>
+
+                </div>
+
+
+                <!-- For Structure -->
+
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        For Structure
+                    </span>
+
+                    <p dir="rtl">
+                        يتكون الـ <strong>for loop</strong> من ثلاثة أجزاء:
+                        البداية، والشرط، والتغيير.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (initialization; condition; increment)
+{
+    // Code
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        <strong>initialization</strong>
+                        تحدد قيمة البداية،
+                        و<strong>condition</strong>
+                        تحدد متى يستمر التكرار،
+                        و<strong>increment</strong>
+                        تغير قيمة المتغير.
+                    </p>
+
+                </div>
+
+
+                <!-- While Loop -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-rotate"></i>
+                        While Loop
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int i = 1;
+
+while (i <= 5)
+{
+    Console.WriteLine(i);
+    i++;
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يستمر الـ <strong>while loop</strong>
+                        في التكرار طالما أن الشرط
+                        <strong>i &lt;= 5</strong>
+                        صحيح.
+                    </p>
+
+                </div>
+
+
+                <!-- Do While -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                        Do While
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>int i = 1;
+
+do
+{
+    Console.WriteLine(i);
+    i++;
+}
+while (i <= 5);</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في <strong>do while</strong> يتم تنفيذ الكود
+                        مرة واحدة على الأقل قبل فحص الشرط.
+                    </p>
+
+                </div>
+
+
+                <!-- Break -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-stop"></i>
+                        Break
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (int i = 1; i <= 10; i++)
+{
+    if (i == 5)
+    {
+        break;
+    }
+
+    Console.WriteLine(i);
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم <strong>break</strong>
+                        لإيقاف الـ Loop مباشرة عند تحقق شرط معين.
+                    </p>
+
+                </div>
+
+
+                <!-- Continue -->
+
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-forward"></i>
+                        Continue
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for (int i = 1; i <= 5; i++)
+{
+    if (i == 3)
+    {
+        continue;
+    }
+
+    Console.WriteLine(i);
+}</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        تستخدم <strong>continue</strong>
+                        لتخطي التكرار الحالي والانتقال إلى التكرار التالي.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>for</strong>
+                            <span dir="rtl">
+                                تستخدم للتكرار عندما يكون عدد التكرارات معروفًا غالبًا.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>while</strong>
+                            <span dir="rtl">
+                                تستمر طالما أن الشرط صحيح.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>do while</strong>
+                            <span dir="rtl">
+                                تنفذ الكود مرة واحدة على الأقل.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>break</strong>
+                            <span dir="rtl">
+                                توقف الـ Loop.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>continue</strong>
+                            <span dir="rtl">
+                                تتخطى التكرار الحالي.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

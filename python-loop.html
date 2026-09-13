@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loop | Python</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+                
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <button class="theme-btn" id="themeBtn">
+    <i class="fa-solid fa-moon"></i>
+</button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Loop</h1>
+
+                    <p dir="rtl">
+                        الـ Loop تستخدم لتكرار تنفيذ مجموعة من الأوامر
+                        أكثر من مرة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Loop</strong> هي طريقة لتكرار تنفيذ
+                        مجموعة من الأوامر البرمجية عدة مرات بدلًا من
+                        كتابة نفس الكود مرة أخرى.
+                    </p>
+
+                </div>
+
+
+                <!-- For Loop -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-code"></i>
+                        For Loop
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا يتم تكرار الأمر داخل الـ Loop خمس مرات،
+                        وتبدأ قيمة <strong>i</strong> من 0 وتنتهي عند 4.
+                    </p>
+
+                </div>
+
+
+                <!-- Explanation -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Explanation
+                    </span>
+
+                    <p dir="rtl">
+                        نستخدم الكلمة <strong>for</strong> لإنشاء
+                        For Loop.
+                    </p>
+
+                    <p dir="rtl">
+                        الدالة <strong>range()</strong> تحدد عدد مرات
+                        التكرار أو مجموعة القيم التي سيتم المرور عليها.
+                    </p>
+
+                    <p dir="rtl">
+                        المسافة البادئة مهمة جدًا في Python لأنها تحدد
+                        الأوامر الموجودة داخل الـ Loop.
+                    </p>
+
+                </div>
+
+
+                <!-- Range Example -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list-ol"></i>
+                        Range Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في هذا المثال تبدأ القيم من
+                        <strong>1</strong>
+                        وتستمر حتى
+                        <strong>5</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- While Loop -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-spinner"></i>
+                        While Loop
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>i = 1
+
+while i <= 5:
+    print(i)
+    i += 1</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        الـ <strong>while</strong> تستمر في التكرار
+                        طالما أن الشرط الموجود بداخلها يساوي
+                        <strong>True</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>for</strong>
+                            <span>تستخدم لتكرار الأوامر على مجموعة من القيم.</span>
+                        </div>
+
+                        <div>
+                            <strong>while</strong>
+                            <span>تكرر الأوامر طالما أن الشرط True.</span>
+                        </div>
+
+                        <div>
+                            <strong>range()</strong>
+                            <span>تستخدم لإنشاء تسلسل من الأرقام.</span>
+                        </div>
+
+                        <div>
+                            <strong>Indentation</strong>
+                            <span>تحدد الأوامر الموجودة داخل الـ Loop.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- List Loop -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-list"></i>
+                        Loop with List
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>names = ["Ali", "Ahmed", "Omar"]
+
+for name in names:
+    print(name)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا يمر الـ Loop على كل عنصر داخل الـ
+                        <strong>List</strong>
+                        ويطبع العناصر واحدًا تلو الآخر.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

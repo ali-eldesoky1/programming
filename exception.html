@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exception | Python</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Exception</h1>
+
+                    <p dir="rtl">
+                        الـ Exception هي مشكلة تحدث أثناء تشغيل
+                        البرنامج ويمكن التعامل معها باستخدام
+                        try و except.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl" v>
+                        الـ <strong>Exception</strong> هي حالة غير متوقعة
+                        تحدث أثناء تنفيذ البرنامج، مثل محاولة القسمة
+                        على صفر أو إدخال بيانات غير مناسبة.
+                    </p>
+
+                    <p dir="rtl">
+                        يمكن التعامل مع هذه الأخطاء حتى لا يتوقف
+                        البرنامج بشكل مفاجئ.
+                    </p>
+
+                </div>
+
+
+                <!-- Error Example -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-bug"></i>
+                        Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>number = 10
+result = number / 0
+
+print(result)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في هذا المثال تحدث مشكلة لأن القسمة على
+                        <strong>0</strong>
+                        غير صحيحة، وبالتالي يظهر
+                        <strong>Exception</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Try Except -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Try / Except
+                    </span>
+
+                    <p dir="rtl">
+                        نستخدم <strong>try</strong> لوضع الكود الذي
+                        نتوقع أن يحدث فيه خطأ.
+                    </p>
+
+                    <p dir="rtl">
+                        ونستخدم <strong>except</strong> للتعامل مع
+                        الخطأ إذا حدث.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try:
+    number = 10
+    result = number / 0
+    print(result)
+
+except:
+    print("An error occurred")</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Specific Exception -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-filter"></i>
+                        Specific Exception
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try:
+    number = int("Hello")
+
+except ValueError:
+    print("Invalid value")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يمكن تحديد نوع الخطأ الذي نريد التعامل معه،
+                        مثل <strong>ValueError</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Finally -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        Finally
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try:
+    print("Start")
+
+except:
+    print("Error")
+
+finally:
+    print("Finished")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        يتم تنفيذ <strong>finally</strong> سواء حدث
+                        Exception أم لم يحدث.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>try</strong>
+                            <span>يحتوي على الكود الذي قد يحدث فيه خطأ.</span>
+                        </div>
+
+                        <div>
+                            <strong>except</strong>
+                            <span>يستخدم للتعامل مع الـ Exception.</span>
+                        </div>
+
+                        <div>
+                            <strong>finally</strong>
+                            <span>يتم تنفيذه في جميع الحالات.</span>
+                        </div>
+
+                        <div>
+                            <strong>ValueError</strong>
+                            <span>يحدث عندما تكون القيمة غير مناسبة للعملية المطلوبة.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Practical Example -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-terminal"></i>
+                        Practical Example
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>try:
+    age = int(input("Enter your age: "))
+    print(age)
+
+except ValueError:
+    print("Please enter a valid number")</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا إذا أدخل المستخدم رقمًا صحيحًا يتم تنفيذ
+                        البرنامج بشكل طبيعي، وإذا أدخل قيمة غير رقمية
+                        يتم التعامل مع الخطأ بدلًا من توقف البرنامج.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>

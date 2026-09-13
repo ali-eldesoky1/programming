@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Module | Python</title>
+    <link rel="stylesheet" href="theme.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="attribute.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+   <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="programming.html">Programming</a>
+                </li>
+
+                <li>
+                    <a href="computer.html">Computer</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+                <button class="theme-btn" id="themeBtn">
+                     <i class="fa-solid fa-moon"></i>
+                </button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <a href="python.html" class="back">
+            <i class="fa-solid fa-arrow-right"></i>
+            Back to Python
+        </a>
+
+
+        <section class="term-page">
+
+            <!-- Term Header -->
+            <div class="term-header">
+
+                <div class="term-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+
+                <div>
+
+                    <span class="category">Python</span>
+
+                    <h1>Module</h1>
+
+                    <p dir="rtl">
+                        الـ Module هو ملف يحتوي على كود Python
+                        يمكن استخدامه داخل ملفات Python أخرى.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Definition -->
+                <div class="definition">
+
+                    <span class="label">
+                        <i class="fa-solid fa-book"></i>
+                        Definition
+                    </span>
+
+                    <p dir="rtl">
+                        الـ <strong>Module</strong> هو ملف Python
+                        يحتوي على متغيرات أو Functions أو Classes
+                        ويمكن استيراده واستخدام محتواه في ملف آخر.
+                    </p>
+
+                    <p dir="rtl">
+                        تساعد الـ Modules على تنظيم المشروع
+                        وتقسيم الكود إلى ملفات منفصلة.
+                    </p>
+
+                </div>
+
+
+                <!-- Create Module -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-file-code"></i>
+                        Create a Module
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code># math_tools.py
+
+def add(a, b):
+    return a + b</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        في المثال السابق أنشأنا ملفًا باسم
+                        <strong>math_tools.py</strong>
+                        يحتوي على Function اسمها
+                        <strong>add</strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- Import -->
+                <div class="explanation">
+
+                    <span class="label">
+                        <i class="fa-solid fa-download"></i>
+                        Import
+                    </span>
+
+                    <p dir="rtl">
+                        لاستخدام Module داخل ملف آخر نستخدم كلمة
+                        <strong>import</strong>.
+                    </p>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>import math_tools
+
+result = math_tools.add(5, 3)
+
+print(result)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        هنا قمنا باستيراد
+                        <strong>math_tools</strong>
+                        ثم استخدمنا الـ Function الموجودة بداخله.
+                    </p>
+
+                </div>
+
+
+                <!-- From Import -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        From Import
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>from math_tools import add
+
+result = add(10, 20)
+
+print(result)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        باستخدام
+                        <strong>from ... import</strong>
+                        يمكن استيراد Function محددة بدلًا من استيراد
+                        الـ Module بالكامل.
+                    </p>
+
+                </div>
+
+
+                <!-- Built-in Module -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-box"></i>
+                        Built-in Module
+                    </span>
+
+                    <div class="code-box">
+
+                        <div class="code-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>import math
+
+print(math.sqrt(25))
+print(math.pi)</code></pre>
+
+                    </div>
+
+                    <p dir="rtl">
+                        Python تحتوي على Modules جاهزة يمكن استخدامها
+                        مباشرة مثل
+                        <strong>math</strong>
+                        التي توفر العديد من العمليات الرياضية.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notes -->
+                <div class="common">
+
+                    <span class="label">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Important Notes
+                    </span>
+
+                    <div class="attribute-list">
+
+                        <div>
+                            <strong>Module</strong>
+                            <span>ملف Python يحتوي على كود يمكن إعادة استخدامه.</span>
+                        </div>
+
+                        <div>
+                            <strong>import</strong>
+                            <span>تستخدم لاستيراد Module.</span>
+                        </div>
+
+                        <div>
+                            <strong>from</strong>
+                            <span>تستخدم لاستيراد جزء محدد من Module.</span>
+                        </div>
+
+                        <div>
+                            <strong>.py</strong>
+                            <span>امتداد ملفات Python.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Why Modules -->
+                <div class="example">
+
+                    <span class="label">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Why Use Modules?
+                    </span>
+
+                    <p dir="rtl">
+                        استخدام الـ Modules يجعل المشروع أكثر تنظيمًا،
+                        ويساعد على إعادة استخدام الكود بدلًا من كتابته
+                        مرة أخرى في كل ملف.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn Programming Easily
+        </p>
+
+    </footer>
+    <script src="theme.js"></script>
+</body>
+
+</html>
