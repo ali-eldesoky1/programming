@@ -1,0 +1,744 @@
+/* ==============================
+   General
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #222,
+        #444,
+        #252525
+    );
+
+    color: #f2f2f2;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   Header
+============================== */
+
+header {
+    padding: 20px 7%;
+
+    position: relative;
+
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+.logo span {
+    color: #d6b98c;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    list-style: none;
+}
+
+nav ul a {
+    color: #dddddd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Theme
+============================== */
+
+.theme-btn {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: #d6b98c;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+
+    background: rgba(214, 185, 140, 0.12);
+}
+
+
+/* ==============================
+   Dropdown
+============================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.dropdown > a i {
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.dropdown:hover > a i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    right: 0;
+
+    width: 215px;
+
+    padding: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    background: #292725;
+
+    border: 1px solid rgba(214, 185, 140, 0.20);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.40);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition: 0.25s ease;
+
+    z-index: 99999;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    color: #dddddd;
+
+    font-size: 13px;
+}
+
+.dropdown-menu a i {
+    width: 18px;
+
+    color: #d6b98c;
+
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(214, 185, 140, 0.10);
+
+    color: #ffffff;
+}
+
+
+/* ==============================
+   Hero
+============================== */
+
+.learning-hero {
+    width: min(1000px, 90%);
+
+    margin: 70px auto 50px;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(214, 185, 140, 0.15);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.learning-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background: rgba(214, 185, 140, 0.12);
+
+    color: #d6b98c;
+
+    font-size: 32px;
+}
+
+.learning-hero > span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #d6b98c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.learning-hero h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(38px, 6vw, 60px);
+
+    font-weight: 600;
+}
+
+.learning-hero h1 b {
+    color: #d6b98c;
+}
+
+.learning-hero p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #bbbbbb;
+
+    font-size: 15px;
+
+    line-height: 2;
+}
+
+
+/* ==============================
+   Learning Section
+============================== */
+
+.learning-section {
+    width: min(1000px, 90%);
+
+    margin: auto;
+
+    padding-bottom: 90px;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #d6b98c;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+
+    font-weight: 500;
+}
+
+.section-heading h2 b {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Learning Path
+============================== */
+
+.learning-path {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+/* Connecting Line */
+
+.learning-path::before {
+    content: "";
+
+    position: absolute;
+
+    top: 35px;
+    bottom: 35px;
+
+    left: 37px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(214, 185, 140, 0.35),
+            rgba(214, 185, 140, 0.08)
+        );
+}
+
+
+/* ==============================
+   Learning Card
+============================== */
+
+.learning-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 75px 65px 1fr;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(214, 185, 140, 0.12);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(214, 185, 140, 0.35);
+
+    background:
+        rgba(255, 255, 255, 0.06);
+}
+
+
+/* Step Number */
+
+.step-number {
+    position: relative;
+
+    z-index: 2;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #2a2825;
+
+    border: 1px solid rgba(214, 185, 140, 0.18);
+
+    color: #d6b98c;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* Step Icon */
+
+.step-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: rgba(214, 185, 140, 0.10);
+
+    color: #d6b98c;
+
+    font-size: 22px;
+}
+
+
+/* Step Content */
+
+.step-content {
+    min-width: 0;
+}
+
+.step-label {
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: #d6b98c;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+.step-content h3 {
+    margin-bottom: 7px;
+
+    font-size: 22px;
+
+    font-weight: 600;
+}
+
+.step-content p {
+    max-width: 650px;
+
+    color: #b2b2b2;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* Bottom */
+
+.step-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+.step-bottom > span {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+.step-bottom a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 14px;
+
+    border: 1px solid rgba(214, 185, 140, 0.20);
+
+    border-radius: 10px;
+
+    color: #d6b98c;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.step-bottom a:hover {
+    color: #222;
+
+    background: #d6b98c;
+
+    border-color: #d6b98c;
+}
+
+
+/* ==============================
+   Footer
+============================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border-top: 1px solid rgba(214, 185, 140, 0.10);
+
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 850px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .learning-card {
+        grid-template-columns: 65px 55px 1fr;
+    }
+
+    .learning-path::before {
+        left: 32px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .learning-hero {
+        margin-top: 30px;
+
+        padding: 50px 20px;
+    }
+
+    .learning-path::before {
+        display: none;
+    }
+
+    .learning-card {
+        grid-template-columns: 55px 1fr;
+
+        padding: 22px;
+
+        gap: 15px;
+    }
+
+    .step-icon {
+        grid-column: 1;
+
+        grid-row: 1;
+    }
+
+    .step-number {
+        display: none;
+    }
+
+    .step-content {
+        grid-column: 2;
+
+        grid-row: 1;
+    }
+
+    .step-content h3 {
+        font-size: 20px;
+    }
+
+    .step-bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .step-bottom a {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .learning-hero h1 {
+        font-size: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .learning-section {
+        width: 92%;
+    }
+
+    .learning-card {
+        padding: 19px;
+    }
+
+    .step-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 19px;
+    }
+
+    .step-content h3 {
+        font-size: 18px;
+    }
+
+    .step-content p {
+        font-size: 12px;
+    }
+}
+
+
+
+.learning-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.learning-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
