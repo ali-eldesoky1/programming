@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Dictionary</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #12110f;
+            --card: rgba(31, 30, 27, 0.88);
+            --border: rgba(214, 185, 140, 0.18);
+            --gold: #d6b98c;
+            --gold-light: #ead3ad;
+            --text: #ffffff;
+            --muted: #918c84;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Cairo", sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(214, 185, 140, 0.08),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(214, 185, 140, 0.06),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+            overflow: hidden;
+        }
+
+        .page {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .login-card {
+            width: min(430px, 100%);
+            padding: 45px 35px;
+
+            text-align: center;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 28px;
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.45),
+                inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+            animation: cardShow 0.8s ease;
+        }
+
+        .icon {
+            width: 75px;
+            height: 75px;
+
+            margin: 0 auto 24px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 22px;
+
+            color: var(--gold-light);
+
+            background: rgba(214, 185, 140, 0.07);
+
+            border: 1px solid rgba(214, 185, 140, 0.15);
+
+            font-size: 28px;
+
+            box-shadow:
+                0 0 35px rgba(214, 185, 140, 0.06);
+        }
+
+        .logo {
+            font-size: 31px;
+            font-weight: 600;
+
+            margin-bottom: 8px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 0 18px;
+
+            background: rgba(255, 255, 255, 0.035);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+
+            transition: 0.3s ease;
+        }
+
+        .input-box:focus-within {
+            border-color: rgba(214, 185, 140, 0.55);
+
+            box-shadow:
+                0 0 0 4px rgba(214, 185, 140, 0.05);
+        }
+
+        .input-box i {
+            color: var(--gold);
+            font-size: 17px;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        .input-box input::placeholder {
+            color: #716d67;
+        }
+
+        .enter-btn {
+            width: 100%;
+            height: 58px;
+
+            margin-top: 16px;
+
+            border: none;
+            border-radius: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 12px;
+
+            background: var(--gold);
+            color: #16130f;
+
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .enter-btn:hover {
+            transform: translateY(-2px);
+
+            background: var(--gold-light);
+
+            box-shadow:
+                0 12px 30px rgba(214, 185, 140, 0.16);
+        }
+
+        .enter-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer-text {
+            margin-top: 24px;
+
+            color: #66625d;
+
+            font-size: 12px;
+        }
+
+        .background-circle {
+            position: fixed;
+
+            width: 180px;
+            height: 180px;
+
+            border: 1px solid rgba(214, 185, 140, 0.07);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+        }
+
+        .circle-one {
+            top: -60px;
+            left: -50px;
+        }
+
+        .circle-two {
+            right: -80px;
+            bottom: -70px;
+
+            width: 240px;
+            height: 240px;
+        }
+
+        @keyframes cardShow {
+            from {
+                opacity: 0;
+                transform: translateY(25px) scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .login-card {
+                padding: 35px 24px;
+                border-radius: 23px;
+            }
+
+            .logo {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <main class="page">
+
+        <section class="login-card">
+
+            <div class="icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="logo">
+                <span>Code</span> Dictionary
+            </div>
+
+            <p class="subtitle">
+                Your simple programming dictionary
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-box">
+                    <i class="fa-regular fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter your name"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="enter-btn">
+                    <span>Enter</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+            <p class="footer-text">
+                Learn. Code. Grow.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const username = document.getElementById("username");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = username.value.trim();
+
+            if (name === "") {
+                username.focus();
+                return;
+            }
+
+            window.location.href = "home.html";
+        });
+    </script>
+
+</body>
+</html>
