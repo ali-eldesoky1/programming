@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Progress | Code Dictionary</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="languages.html">Languages</a>
+                </li>
+
+                <li>
+                    <a href="az.html">Dictionary</a>
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="#">
+                        More
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+
+    <a href="favorites.html">
+        <i class="fa-regular fa-star"></i>
+        Favorites
+    </a>
+
+    <a href="progress.html">
+        <i class="fa-solid fa-chart-line"></i>
+        Progress
+    </a>
+
+    <a href="programming.html">
+        <i class="fa-solid fa-code"></i>
+        Programming
+    </a>
+
+    <a href="computer.html">
+        <i class="fa-solid fa-computer"></i>
+        Computer
+    </a>
+
+    <a href="about.html">
+        <i class="fa-solid fa-circle-info"></i>
+        About
+    </a>
+
+    <a href="services.html">
+        <i class="fa-solid fa-layer-group"></i>
+        Services
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        Contact
+    </a>
+
+    <a href="privacy.html">
+        <i class="fa-solid fa-shield-halved"></i>
+        Privacy
+    </a>
+
+    <a href="terms.html">
+        <i class="fa-solid fa-file-contract"></i>
+        Terms
+    </a>
+
+</div>
+
+                </li>
+
+
+                <li>
+
+                    <button
+                        class="theme-btn"
+                        id="themeBtn"
+                        type="button"
+                    >
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Main -->
+
+    <main>
+
+
+        <!-- Hero -->
+
+        <section class="progress-hero">
+
+            <div class="progress-icon">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+
+            <span>
+                Keep Learning
+            </span>
+
+
+            <h1>
+                Your <b>Progress</b>
+            </h1>
+
+
+            <p>
+                Track the terms you have explored and keep moving forward.
+            </p>
+
+        </section>
+
+
+
+        <!-- Progress Section -->
+
+        <section class="progress-section">
+
+
+            <!-- Overall -->
+
+            <div class="overall-card">
+
+                <div class="section-head">
+
+                    <span>
+                        Overall Progress
+                    </span>
+
+                    <strong id="overallPercent">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="overallFill"
+                    ></div>
+
+                </div>
+
+
+                <div class="overall-stats">
+
+                    <div>
+                        <strong id="viewedCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Terms Viewed
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <strong id="remainingCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Remaining
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <strong id="totalCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Total Terms
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Categories -->
+
+            <div class="category-title">
+
+                <span>
+                    Categories
+                </span>
+
+                <h2>
+                    Learning <b>Progress</b>
+                </h2>
+
+            </div>
+
+
+            <div
+                class="category-grid"
+                id="categoryGrid"
+            ></div>
+
+
+
+            <!-- Reset -->
+
+            <button
+                class="reset-btn"
+                id="resetProgress"
+                type="button"
+            >
+
+                <i class="fa-solid fa-rotate-right"></i>
+
+                Reset Progress
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+
+
+
+    <script src="progress.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,716 @@
+/* ==============================
+   General
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #222,
+        #444,
+        #252525
+    );
+
+    color: #f2f2f2;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   Header
+============================== */
+
+header {
+    padding: 20px 7%;
+
+    position: relative;
+
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+.logo span {
+    color: #d6b98c;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    list-style: none;
+}
+
+nav ul a {
+    color: #dddddd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Dropdown
+============================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.dropdown > a i {
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.dropdown:hover > a i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 12px);
+    right: 0;
+
+    width: 210px;
+
+    padding: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    background: #292725;
+
+    border: 1px solid rgba(214, 185, 140, 0.20);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.40);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition: 0.25s ease;
+
+    z-index: 99999;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    color: #dddddd;
+}
+
+.dropdown-menu a i {
+    width: 18px;
+
+    color: #d6b98c;
+
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(214, 185, 140, 0.10);
+
+    color: #ffffff;
+}
+
+
+/* ==============================
+   Theme
+============================== */
+
+.theme-btn {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: #d6b98c;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+
+    background: rgba(214, 185, 140, 0.12);
+}
+
+
+/* ==============================
+   Hero
+============================== */
+
+.progress-hero {
+    width: min(950px, 90%);
+
+    margin: 70px auto 45px;
+
+    padding: 65px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(214, 185, 140, 0.15);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.progress-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background: rgba(214, 185, 140, 0.12);
+
+    color: #d6b98c;
+
+    font-size: 32px;
+}
+
+.progress-hero > span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #d6b98c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.progress-hero h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(35px, 6vw, 58px);
+
+    font-weight: 600;
+}
+
+.progress-hero h1 b {
+    color: #d6b98c;
+}
+
+.progress-hero p {
+    color: #bbbbbb;
+
+    font-size: 15px;
+
+    line-height: 2;
+}
+
+
+/* ==============================
+   Main Section
+============================== */
+
+.progress-section {
+    width: min(1000px, 90%);
+
+    margin: auto;
+
+    padding-bottom: 80px;
+}
+
+
+/* ==============================
+   Overall Card
+============================== */
+
+.overall-card {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(214, 185, 140, 0.12);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.section-head {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.section-head span {
+    color: #dddddd;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.section-head strong {
+    color: #d6b98c;
+
+    font-size: 28px;
+
+    font-weight: 500;
+}
+
+
+/* ==============================
+   Progress Bar
+============================== */
+
+.progress-bar {
+    width: 100%;
+
+    height: 12px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.progress-fill {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #d6b98c;
+
+    transition: width 0.8s ease;
+}
+
+
+/* ==============================
+   Stats
+============================== */
+
+.overall-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.overall-stats div {
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.overall-stats strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d6b98c;
+
+    font-size: 26px;
+
+    font-weight: 500;
+}
+
+.overall-stats span {
+    color: #999999;
+
+    font-size: 12px;
+}
+
+
+/* ==============================
+   Category Title
+============================== */
+
+.category-title {
+    margin: 45px 0 22px;
+
+    text-align: center;
+}
+
+.category-title > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #d6b98c;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.category-title h2 {
+    font-size: 32px;
+
+    font-weight: 500;
+}
+
+.category-title h2 b {
+    color: #d6b98c;
+}
+
+
+/* ==============================
+   Category Cards
+============================== */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.category-card {
+    padding: 23px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(214, 185, 140, 0.12);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(214, 185, 140, 0.28);
+}
+
+.category-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 13px;
+}
+
+.category-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #eeeeee;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.category-name i {
+    color: #d6b98c;
+
+    font-size: 16px;
+}
+
+.category-percent {
+    color: #d6b98c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.category-bar {
+    width: 100%;
+
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.category-fill {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #d6b98c;
+
+    transition: width 0.7s ease;
+}
+
+.category-count {
+    margin-top: 9px;
+
+    color: #919191;
+
+    font-size: 11px;
+}
+
+
+/* ==============================
+   Reset
+============================== */
+
+.reset-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin: 30px auto 0;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(214, 185, 140, 0.18);
+
+    border-radius: 12px;
+
+    background: rgba(214, 185, 140, 0.06);
+
+    color: #d6b98c;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: rgba(214, 185, 140, 0.12);
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   Footer
+============================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border-top: 1px solid rgba(214, 185, 140, 0.1);
+
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 850px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .progress-hero {
+        margin-top: 30px;
+
+        padding: 50px 20px;
+    }
+
+    .overall-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .progress-section {
+        width: 92%;
+    }
+
+    .overall-card {
+        padding: 22px;
+    }
+
+    .progress-hero h1 {
+        font-size: 40px;
+    }
+
+    .category-title h2 {
+        font-size: 27px;
+    }
+}

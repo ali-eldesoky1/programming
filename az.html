@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A-Z Dictionary | Code Dictionary</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="az.css">
+
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+    <nav>
+
+        <!-- Logo -->
+
+        <div class="logo">
+            <span>Code</span>Dictionary
+        </div>
+
+
+        <!-- Navigation -->
+
+        <ul>
+
+            <li>
+                <a href="home.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="languages.html">
+                    Languages
+                </a>
+            </li>
+
+
+            <li>
+                <a href="az.html">
+                    Dictionary
+                </a>
+            </li>
+
+
+            <!-- More -->
+
+            <li class="dropdown">
+
+                <a href="#" class="more-link">
+
+                    More
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+
+                <div class="dropdown-menu">
+
+    <a href="favorites.html">
+        <i class="fa-regular fa-star"></i>
+        Favorites
+    </a>
+
+    <a href="progress.html">
+        <i class="fa-solid fa-chart-line"></i>
+        Progress
+    </a>
+
+    <a href="programming.html">
+        <i class="fa-solid fa-code"></i>
+        Programming
+    </a>
+
+    <a href="computer.html">
+        <i class="fa-solid fa-computer"></i>
+        Computer
+    </a>
+
+    <a href="about.html">
+        <i class="fa-solid fa-circle-info"></i>
+        About
+    </a>
+
+    <a href="services.html">
+        <i class="fa-solid fa-layer-group"></i>
+        Services
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        Contact
+    </a>
+
+    <a href="privacy.html">
+        <i class="fa-solid fa-shield-halved"></i>
+        Privacy
+    </a>
+
+    <a href="terms.html">
+        <i class="fa-solid fa-file-contract"></i>
+        Terms
+    </a>
+
+</div>
+
+            </li>
+
+
+            <!-- Theme -->
+
+            <li>
+
+                <button
+                    class="theme-btn"
+                    id="themeBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+    <!-- Main -->
+
+    <main>
+
+
+        <!-- Hero -->
+
+        <section class="az-hero">
+
+            <div class="az-icon">
+
+                <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
+
+            <span>
+
+                Complete Programming Dictionary
+
+            </span>
+
+
+            <h1>
+
+                A-Z <b>Dictionary</b>
+
+            </h1>
+
+
+            <p>
+
+                Explore programming, computer, web
+                and technology terms alphabetically.
+
+            </p>
+
+        </section>
+
+
+        <!-- Dictionary -->
+
+        <section class="dictionary-section">
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a term..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- Letters -->
+
+            <div
+                class="letters"
+                id="letters"
+            >
+
+                <button
+                    type="button"
+                    data-letter="all"
+                    class="active"
+                >
+                    All
+                </button>
+
+
+                <button type="button" data-letter="A">
+                    A
+                </button>
+
+                <button type="button" data-letter="B">
+                    B
+                </button>
+
+                <button type="button" data-letter="C">
+                    C
+                </button>
+
+                <button type="button" data-letter="D">
+                    D
+                </button>
+
+                <button type="button" data-letter="E">
+                    E
+                </button>
+
+                <button type="button" data-letter="F">
+                    F
+                </button>
+
+                <button type="button" data-letter="G">
+                    G
+                </button>
+
+                <button type="button" data-letter="H">
+                    H
+                </button>
+
+                <button type="button" data-letter="I">
+                    I
+                </button>
+
+                <button type="button" data-letter="J">
+                    J
+                </button>
+
+                <button type="button" data-letter="K">
+                    K
+                </button>
+
+                <button type="button" data-letter="L">
+                    L
+                </button>
+
+                <button type="button" data-letter="M">
+                    M
+                </button>
+
+                <button type="button" data-letter="N">
+                    N
+                </button>
+
+                <button type="button" data-letter="O">
+                    O
+                </button>
+
+                <button type="button" data-letter="P">
+                    P
+                </button>
+
+                <button type="button" data-letter="Q">
+                    Q
+                </button>
+
+                <button type="button" data-letter="R">
+                    R
+                </button>
+
+                <button type="button" data-letter="S">
+                    S
+                </button>
+
+                <button type="button" data-letter="T">
+                    T
+                </button>
+
+                <button type="button" data-letter="U">
+                    U
+                </button>
+
+                <button type="button" data-letter="V">
+                    V
+                </button>
+
+                <button type="button" data-letter="W">
+                    W
+                </button>
+
+                <button type="button" data-letter="X">
+                    X
+                </button>
+
+                <button type="button" data-letter="Y">
+                    Y
+                </button>
+
+                <button type="button" data-letter="Z">
+                    Z
+                </button>
+
+            </div>
+
+
+            <!-- Terms -->
+
+            <div
+                class="terms-grid"
+                id="termsGrid"
+            ></div>
+
+
+            <!-- No Results -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <p>
+                    No terms found.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="az.js"></script>
+
+    <script src="theme.js"></script>
+
+</body>
+
+</html>
