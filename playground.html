@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Playground | Code Dictionary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="playground.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Code</span>Dictionary
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="home.html">Home</a>
+            <a href="learning.html">Learning</a>
+            <a href="languages.html">Languages</a>
+            <a href="az.html">Dictionary</a>
+
+            <div class="nav-dropdown">
+
+                <button class="dropdown-btn" type="button">
+                    More
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="favorites.html">
+                        <i class="fa-regular fa-star"></i>
+                        Favorites
+                    </a>
+
+                    <a href="progress.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        Progress
+                    </a>
+
+                    
+                    <a href="programming.html">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Programming
+                    </a>
+
+                    <a href="computer.html">
+                        <i class="fa-solid fa-computer"></i>
+                        Computer
+                    </a>
+
+                    
+                    <a href="about.html">
+                        <i class="fa-solid fa-circle-info"></i>
+                        About
+                    </a>
+                    
+                    <a href="services.html">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Services
+                    </a>
+
+                    <a href="contact.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact
+                    </a>
+                    
+                    <a href="privacy.html">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Privacy
+                    </a>
+                    
+                    <a href="terms.html">
+                        <i class="fa-solid fa-file-contract"></i>
+                        Terms
+                    </a>
+                    
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+
+                    <a href="playground.html">
+                        <i class="fa-solid fa-terminal"></i>
+                        Playground
+                    </a>
+                    <a href="quiz.html">
+                        <i class="fa-solid fa-circle-question"></i>
+                        Quiz
+                    </a>
+
+                </div>
+
+            </div>
+
+            <button id="themeBtn" class="theme-btn" type="button">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="menuBtn" class="menu-btn" type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="playground-hero">
+
+            <div class="hero-icon">
+                <i class="fa-solid fa-terminal"></i>
+            </div>
+
+            <div class="hero-content">
+
+                <span>Write. Run. Experiment.</span>
+
+                <h1>
+                    Code <b>Playground</b>
+                </h1>
+
+                <p>
+                    Write your code and see the result instantly.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Toolbar -->
+
+        <section class="playground-container">
+
+            <div class="playground-toolbar">
+
+                <div class="language-selector">
+
+                    <label for="language">
+                        Language
+                    </label>
+
+                    <select id="language">
+
+                        <option value="html">
+                            HTML
+                        </option>
+
+                        <option value="css">
+                            CSS
+                        </option>
+
+                        <option value="javascript">
+                            JavaScript
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="toolbar-actions">
+
+                    <button id="runBtn" class="run-btn">
+                        <i class="fa-solid fa-play"></i>
+                        Run
+                    </button>
+
+                    <button id="clearBtn">
+                        <i class="fa-solid fa-trash"></i>
+                        Clear
+                    </button>
+
+                    <button id="resetBtn">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Reset
+                    </button>
+
+                    <button id="copyBtn">
+                        <i class="fa-regular fa-copy"></i>
+                        Copy
+                    </button>
+
+                    <button id="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </button>
+
+                    <button id="fullscreenBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Workspace -->
+
+            <div class="workspace">
+
+                <!-- Editor -->
+
+                <section class="editor-panel">
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+
+                            <span class="status-dot"></span>
+
+                            <i class="fa-solid fa-code"></i>
+
+                            <span>Editor</span>
+
+                        </div>
+
+                        <span id="lineCount">
+                            1 line
+                        </span>
+
+                    </div>
+
+
+                    <div class="editor-wrapper">
+
+                        <div id="lineNumbers" class="line-numbers">
+                            1
+                        </div>
+
+                        <textarea
+                            id="codeEditor"
+                            spellcheck="false"
+                            autocapitalize="off"
+                            autocomplete="off"
+                            autocorrect="off"
+                            aria-label="Code Editor"></textarea>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Preview -->
+
+                <section class="preview-panel">
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+
+                            <span class="status-dot"></span>
+
+                            <i class="fa-solid fa-display"></i>
+
+                            <span>Preview</span>
+
+                        </div>
+
+                        <button id="refreshPreview" class="small-btn">
+                            <i class="fa-solid fa-rotate"></i>
+                        </button>
+
+                    </div>
+
+                    <iframe
+                        id="preview"
+                        title="Code Preview"
+                        sandbox="allow-scripts">
+                    </iframe>
+
+                </section>
+
+            </div>
+
+
+            <!-- Console -->
+
+            <section class="console-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+
+                        <span class="status-dot"></span>
+
+                        <i class="fa-solid fa-terminal"></i>
+
+                        <span>Console</span>
+
+                    </div>
+
+                    <button id="clearConsole" class="small-btn">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+
+                </div>
+
+
+                <div id="consoleOutput" class="console-output">
+
+                    <div class="console-welcome">
+                        <span>›</span>
+                        Console ready...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Keyboard shortcuts -->
+
+            <div class="shortcuts">
+
+                <span>
+                    <kbd>Ctrl</kbd>
+                    +
+                    <kbd>Enter</kbd>
+                    Run
+                </span>
+
+                <span>
+                    <kbd>Tab</kbd>
+                    Indent
+                </span>
+
+                <span>
+                    <kbd>Ctrl</kbd>
+                    +
+                    <kbd>S</kbd>
+                    Save
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span>Code</span>Dictionary
+                </div>
+
+                <p>
+                    Learn. Code. Grow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Code Dictionary — Learn. Code. Grow.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="theme.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="playground.js"></script>
+
+</body>
+
+</html>

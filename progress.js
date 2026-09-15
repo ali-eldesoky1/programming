@@ -19,15 +19,20 @@ const categoryGrid =
 const resetButton =
     document.getElementById("resetProgress");
 
+const recentGrid =
+    document.getElementById("recentGrid");
+
 
 /* ==============================
    Dictionary Categories
 ============================== */
 
 const categories = [
+
     {
         name: "Computer",
         icon: "fa-solid fa-computer",
+
         terms: [
             "Hardware",
             "Software",
@@ -49,9 +54,11 @@ const categories = [
         ]
     },
 
+
     {
         name: "Programming",
         icon: "fa-solid fa-code",
+
         terms: [
             "Algorithm",
             "Variable",
@@ -82,9 +89,11 @@ const categories = [
         ]
     },
 
+
     {
         name: "Web",
         icon: "fa-solid fa-globe",
+
         terms: [
             "HTML",
             "CSS",
@@ -108,9 +117,11 @@ const categories = [
         ]
     },
 
+
     {
         name: "JavaScript",
         icon: "fa-brands fa-js",
+
         terms: [
             "JavaScript",
             "DOM",
@@ -120,9 +131,11 @@ const categories = [
         ]
     },
 
+
     {
         name: "Python",
         icon: "fa-brands fa-python",
+
         terms: [
             "Python",
             "List",
@@ -131,25 +144,31 @@ const categories = [
         ]
     },
 
+
     {
         name: "C#",
         icon: "fa-solid fa-hashtag",
+
         terms: [
             "C#"
         ]
     },
 
+
     {
         name: "Java",
         icon: "fa-brands fa-java",
+
         terms: [
             "Java"
         ]
     },
 
+
     {
         name: "Tools",
         icon: "fa-solid fa-toolbox",
+
         terms: [
             "Git",
             "GitHub",
@@ -159,6 +178,7 @@ const categories = [
             "Terminal"
         ]
     }
+
 ];
 
 
@@ -176,34 +196,45 @@ function getViewedTerms() {
 
 
 /* ==============================
-   Display Overall Progress
+   Get Term Name
+============================== */
+
+function getTermName(item) {
+
+    return typeof item === "string"
+        ? item
+        : item.name;
+
+}
+
+
+/* ==============================
+   Overall Progress
 ============================== */
 
 function displayOverall() {
 
-    const viewed =
+    const viewedItems =
         getViewedTerms();
 
 
-    const uniqueViewed =
-        [
-            ...new Set(
-                viewed.map(function (item) {
+    const uniqueViewed = [
+        ...new Set(
+            viewedItems.map(function (item) {
 
-                    return typeof item === "string"
-                        ? item
-                        : item.name;
+                return getTermName(item);
 
-                })
-            )
-        ];
+            })
+        )
+    ];
 
 
     const totalTerms =
         categories.reduce(
             function (total, category) {
 
-                return total + category.terms.length;
+                return total +
+                    category.terms.length;
 
             },
             0
@@ -224,33 +255,40 @@ function displayOverall() {
         });
 
 
-    const viewed =
+    const viewedNumber =
         viewedTerms.length;
 
 
     const remaining =
-        Math.max(totalTerms - viewed, 0);
+        Math.max(
+            totalTerms - viewedNumber,
+            0
+        );
 
 
     const percent =
         totalTerms === 0
             ? 0
             : Math.round(
-                (viewed / totalTerms) * 100
+                (viewedNumber / totalTerms) * 100
             );
 
 
     viewedCount.textContent =
-        viewed;
+        viewedNumber;
+
 
     remainingCount.textContent =
         remaining;
 
+
     totalCount.textContent =
         totalTerms;
 
+
     overallPercent.textContent =
         `${percent}%`;
+
 
     overallFill.style.width =
         `${percent}%`;
@@ -259,7 +297,7 @@ function displayOverall() {
 
 
 /* ==============================
-   Display Categories
+   Categories Progress
 ============================== */
 
 function displayCategories() {
@@ -271,9 +309,7 @@ function displayCategories() {
     const viewedNames =
         viewed.map(function (item) {
 
-            return typeof item === "string"
-                ? item
-                : item.name;
+            return getTermName(item);
 
         });
 
@@ -284,11 +320,13 @@ function displayCategories() {
     categories.forEach(function (category) {
 
         const categoryViewed =
-            category.terms.filter(function (term) {
+            category.terms.filter(
+                function (term) {
 
-                return viewedNames.includes(term);
+                    return viewedNames.includes(term);
 
-            }).length;
+                }
+            ).length;
 
 
         const percent =
@@ -322,6 +360,7 @@ function displayCategories() {
 
                 </div>
 
+
                 <span class="category-percent">
                     ${percent}%
                 </span>
@@ -342,7 +381,8 @@ function displayCategories() {
             <div class="category-count">
 
                 ${categoryViewed}
-                / ${category.terms.length}
+                /
+                ${category.terms.length}
                 terms viewed
 
             </div>
@@ -351,6 +391,106 @@ function displayCategories() {
 
 
         categoryGrid.appendChild(card);
+
+    });
+
+}
+
+
+/* ==============================
+   Recently Viewed
+============================== */
+
+function displayRecentlyViewed() {
+
+    recentGrid.innerHTML = "";
+
+
+    const viewed =
+        getViewedTerms();
+
+
+    const recent =
+        viewed
+            .slice()
+            .reverse()
+            .slice(0, 6);
+
+
+    if (recent.length === 0) {
+
+        recentGrid.innerHTML = `
+
+            <div class="recent-empty">
+
+                <i class="fa-regular fa-eye"></i>
+
+                <h3>
+                    No Terms Viewed Yet
+                </h3>
+
+                <p>
+                    Start exploring the dictionary
+                    to track your learning progress.
+                </p>
+
+                <a href="az.html">
+
+                    Browse Dictionary
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    recent.forEach(function (term) {
+
+        const card =
+            document.createElement("a");
+
+
+        card.className =
+            "recent-card";
+
+
+        card.href =
+            term.link || "az.html";
+
+
+        card.innerHTML = `
+
+            <div class="recent-info">
+
+    <span class="recent-category">
+        ${term.category}
+    </span>
+
+    <h3>
+        ${term.name}
+    </h3>
+
+    <p>
+        ${term.description}
+    </p>
+
+</div>
+
+
+            <i
+                class="fa-solid fa-arrow-right recent-arrow"
+            ></i>
+
+        `;
+
+
+        recentGrid.appendChild(card);
 
     });
 
@@ -382,7 +522,28 @@ resetButton.addEventListener(
 
 
         displayOverall();
+
         displayCategories();
+
+        displayRecentlyViewed();
+
+    }
+);
+
+
+/* ==============================
+   Refresh When Returning
+============================== */
+
+window.addEventListener(
+    "pageshow",
+    function () {
+
+        displayOverall();
+
+        displayCategories();
+
+        displayRecentlyViewed();
 
     }
 );
@@ -395,3 +556,5 @@ resetButton.addEventListener(
 displayOverall();
 
 displayCategories();
+
+displayRecentlyViewed();

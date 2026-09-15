@@ -1041,6 +1041,52 @@ termsGrid.addEventListener(
 );
 
 
+
+/* ==============================
+   Track Recently Viewed
+============================== */
+
+termsGrid.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            event.target.closest(".favorite-btn")
+        ) {
+            return;
+        }
+
+
+        const card =
+            event.target.closest(".term-card");
+
+
+        if (!card) {
+            return;
+        }
+
+
+        const termName =
+            card.querySelector("h3").textContent.trim();
+
+
+        const term =
+            terms.find(function (item) {
+
+                return item.name === termName;
+
+            });
+
+
+        if (!term) {
+            return;
+        }
+
+
+        saveRecentlyViewed(term);
+
+    }
+);
 /* ==============================
    Letter Filter
 ============================== */
@@ -1100,30 +1146,30 @@ displayTerms();
 
 function saveRecentlyViewed(term) {
 
-    let recent =
+    let viewed =
         JSON.parse(
             localStorage.getItem("recentlyViewed") || "[]"
         );
 
 
-    recent =
-        recent.filter(function (item) {
+    const alreadyViewed =
+        viewed.some(function (item) {
 
-            return item.name !== term.name;
+            return item.name === term.name;
 
         });
 
 
-    recent.unshift(term);
+    if (!alreadyViewed) {
 
+        viewed.push(term);
 
-    recent =
-        recent.slice(0, 20);
+    }
 
 
     localStorage.setItem(
         "recentlyViewed",
-        JSON.stringify(recent)
+        JSON.stringify(viewed)
     );
 
 }

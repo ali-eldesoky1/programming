@@ -103,7 +103,7 @@ nav {
    Navigation
 ========================= */
 
-ul {
+nav ul {
     display: flex;
 
     align-items: center;
@@ -114,7 +114,7 @@ ul {
 }
 
 
-ul li a {
+nav ul li a {
     position: relative;
 
     color: #dddddd;
@@ -129,12 +129,12 @@ ul li a {
 }
 
 
-ul li a:hover {
+nav ul li a:hover {
     color: #d6b98c;
 }
 
 
-ul li a::after {
+nav ul li a::after {
     content: "";
 
     position: absolute;
@@ -153,8 +153,124 @@ ul li a::after {
 }
 
 
-ul li a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
+}
+
+
+/* =========================
+   Dropdown
+========================= */
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown > a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.dropdown > a i {
+    font-size: 10px;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+
+    top: 35px;
+
+    right: 0;
+
+    width: 190px;
+
+    display: none;
+
+    padding: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 15px;
+
+    background: rgba(45, 45, 45, 0.95);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.30);
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+}
+
+
+.dropdown-menu a::after {
+    display: none;
+}
+
+
+.dropdown-menu a:hover {
+    background: rgba(214, 185, 140, 0.08);
+}
+
+
+.dropdown-menu a i {
+    width: 18px;
+
+    color: #d6b98c;
+}
+
+
+/* =========================
+   Theme Button
+========================= */
+
+.theme-btn {
+    width: 38px;
+
+    height: 38px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: #d6b98c;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.theme-btn:hover {
+    background: rgba(214, 185, 140, 0.12);
+
+    transform: rotate(15deg);
 }
 
 
@@ -174,10 +290,10 @@ main {
 
 
 /* =========================
-   Hero
+   Progress Hero
 ========================= */
 
-.language-hero {
+.progress-hero {
     display: flex;
 
     align-items: center;
@@ -201,9 +317,11 @@ main {
 }
 
 
-/* Hero Icon */
+/* =========================
+   Hero Icon
+========================= */
 
-.language-icon {
+.progress-icon {
     width: 90px;
 
     height: 90px;
@@ -231,14 +349,11 @@ main {
 }
 
 
-/* Hero Info */
+/* =========================
+   Hero Text
+========================= */
 
-.hero-info {
-    flex: 1;
-}
-
-
-.hero-info > span {
+.progress-hero > span {
     color: #d6b98c;
 
     font-size: 13px;
@@ -247,7 +362,7 @@ main {
 }
 
 
-.hero-info h1 {
+.progress-hero h1 {
     margin: 5px 0;
 
     font-size: 38px;
@@ -256,12 +371,12 @@ main {
 }
 
 
-.hero-info h1 b {
+.progress-hero h1 b {
     color: #d6b98c;
 }
 
 
-.hero-info p {
+.progress-hero p {
     color: #aaaaaa;
 
     font-size: 14px;
@@ -270,159 +385,178 @@ main {
 }
 
 
-/* Term Count */
+/* =========================
+   Overall Progress
+========================= */
 
-.term-count {
-    min-width: 100px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 17px;
-
-    border: 1px solid rgba(214, 185, 140, 0.18);
-
-    border-radius: 15px;
-
-    background: rgba(214, 185, 140, 0.09);
+.progress-section {
+    margin-top: 30px;
 }
 
 
-.term-count strong {
+.overall-card {
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
+
+    transition: 0.3s;
+}
+
+
+.overall-card:hover {
+    border-color: rgba(214, 185, 140, 0.25);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   Section Head
+========================= */
+
+.section-head {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.section-head span {
+    color: #dddddd;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.section-head strong {
     color: #d6b98c;
 
-    font-size: 28px;
+    font-size: 25px;
 
     font-weight: 800;
 }
 
 
-.term-count span {
-    color: #aaaaaa;
+/* =========================
+   Main Progress Bar
+========================= */
+
+.progress-bar {
+    width: 100%;
+
+    height: 12px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.progress-fill {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #d6b98c;
+
+    box-shadow:
+        0 0 15px rgba(214, 185, 140, 0.20);
+
+    transition: width 0.6s ease;
+}
+
+
+/* =========================
+   Overall Stats
+========================= */
+
+.overall-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+
+.overall-stats div {
+    padding: 18px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    transition: 0.3s;
+}
+
+
+.overall-stats div:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(214, 185, 140, 0.22);
+}
+
+
+.overall-stats strong {
+    display: block;
+
+    color: #d6b98c;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+.overall-stats span {
+    color: #999999;
 
     font-size: 12px;
 }
 
 
 /* =========================
-   Search
+   Titles
 ========================= */
 
-.search-section {
-    margin: 30px 0;
-}
+.category-title,
+.recent-title {
+    margin-top: 45px;
 
-
-.search-box {
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    padding: 7px;
-
-    border: 1px solid rgba(255, 255, 255, 0.13);
-
-    border-radius: 15px;
-
-    background: rgba(255, 255, 255, 0.06);
-
-    backdrop-filter: blur(15px);
-
-    -webkit-backdrop-filter: blur(15px);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-.search-box > i {
-    margin-right: 15px;
-
-    color: #d6b98c;
-
-    font-size: 17px;
-}
-
-
-.search-box input {
-    flex: 1;
-
-    min-width: 0;
-
-    border: none;
-
-    outline: none;
-
-    background: transparent;
-
-    color: #ffffff;
-
-    font-family: inherit;
-
-    font-size: 14px;
-}
-
-
-.search-box input::placeholder {
-    color: #888888;
-}
-
-
-.search-box button {
-    padding: 12px 22px;
-
-    border: none;
-
-    border-radius: 11px;
-
-    background: #d6b98c;
-
-    color: #292929;
-
-    font-family: inherit;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-
-.search-box button:hover {
-    background: #ead4ae;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px rgba(214, 185, 140, 0.18);
-}
-
-
-/* =========================
-   Section Title
-========================= */
-
-.terms-section {
-    margin-top: 15px;
-}
-
-
-.section-title {
     margin-bottom: 28px;
 }
 
 
-.section-title > span {
+.category-title > span,
+.recent-title > span {
     display: inline-flex;
 
     align-items: center;
@@ -437,7 +571,8 @@ main {
 }
 
 
-.section-title h2 {
+.category-title h2,
+.recent-title h2 {
     margin-top: 6px;
 
     font-size: 30px;
@@ -446,16 +581,17 @@ main {
 }
 
 
-.section-title h2 b {
+.category-title h2 b,
+.recent-title h2 b {
     color: #d6b98c;
 }
 
 
 /* =========================
-   Terms Grid
+   Category Grid
 ========================= */
 
-.terms-grid {
+.category-grid {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -465,10 +601,10 @@ main {
 
 
 /* =========================
-   Term Card
+   Category Card
 ========================= */
 
-.term-card {
+.category-card {
     position: relative;
 
     padding: 25px;
@@ -495,7 +631,7 @@ main {
 }
 
 
-.term-card::before {
+.category-card::before {
     content: "</>";
 
     position: absolute;
@@ -516,7 +652,7 @@ main {
 }
 
 
-.term-card:hover {
+.category-card:hover {
     transform: translateY(-7px);
 
     border-color: rgba(214, 185, 140, 0.30);
@@ -527,156 +663,268 @@ main {
 
 
 /* =========================
-   Card Top
+   Category Top
 ========================= */
 
-.term-top {
+.category-top {
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 
-.term-icon {
-    width: 48px;
-
-    height: 48px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    border-radius: 12px;
-
-    background: rgba(214, 185, 140, 0.10);
-
-    color: #d6b98c;
-
-    font-size: 18px;
-}
-
-
-.term-number {
-    color: #707070;
-
-    font-family: Consolas, monospace;
-
-    font-size: 11px;
-}
-
-
-/* =========================
-   Card Content
-========================= */
-
-.term-card h3 {
-    margin-bottom: 7px;
-
+.category-name {
     color: #ffffff;
 
-    font-size: 21px;
+    font-size: 19px;
 
     font-weight: 700;
 }
 
 
-.term-card p {
-    min-height: 48px;
+.category-percent {
+    color: #d6b98c;
 
-    color: #999999;
+    font-size: 15px;
 
-    font-size: 13px;
-
-    line-height: 1.8;
+    font-weight: 800;
 }
 
 
 /* =========================
-   Card Link
+   Category Progress
 ========================= */
 
-.term-card a {
-    position: relative;
+.category-bar {
+    width: 100%;
 
-    z-index: 2;
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.category-fill {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: #d6b98c;
+
+    transition: width 0.6s ease;
+}
+
+
+.category-count {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #999999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   Recently Viewed
+========================= */
+
+.recent-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.recent-card {
+    position: relative;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: space-between;
+    gap: 15px;
 
-    margin-top: 20px;
+    padding: 20px;
 
-    padding-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
 
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
 
-    color: #d6b98c;
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
 
     text-decoration: none;
 
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.recent-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(214, 185, 140, 0.30);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.28);
+}
+
+
+/* Recent Icon */
+
+.recent-icon {
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(214, 185, 140, 0.10);
+
+    color: #d6b98c;
+
+    font-size: 19px;
+}
+
+
+/* Recent Info */
+
+.recent-info {
+    flex: 1;
+}
+
+
+.recent-info h3 {
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.recent-info p {
+    color: #999999;
+
     font-size: 12px;
+}
 
-    font-weight: 600;
+
+.recent-arrow {
+    color: #d6b98c;
+
+    font-size: 14px;
 
     transition: 0.3s;
 }
 
 
-.term-card a i {
-    transition: 0.3s;
-}
-
-
-.term-card a:hover {
-    color: #ead4ae;
-}
-
-
-.term-card a:hover i {
+.recent-card:hover .recent-arrow {
     transform: translateX(-5px);
 }
 
 
 /* =========================
-   Back
+   Empty Recent
 ========================= */
 
-.back {
-    margin-top: 35px;
+.recent-empty {
+    grid-column: 1 / -1;
+
+    padding: 40px;
 
     text-align: center;
+
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #888888;
+
+    font-size: 13px;
 }
 
 
-.back a {
-    display: inline-flex;
+/* =========================
+   Reset Button
+========================= */
+
+.reset-btn {
+    display: flex;
 
     align-items: center;
 
-    gap: 8px;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin: 35px auto 0;
+
+    padding: 13px 25px;
+
+    border: 1px solid rgba(214, 185, 140, 0.20);
+
+    border-radius: 12px;
+
+    background: rgba(214, 185, 140, 0.09);
 
     color: #d6b98c;
 
-    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
 
     font-size: 13px;
 
     font-weight: 600;
 
+    cursor: pointer;
+
     transition: 0.3s;
 }
 
 
-.back a:hover {
-    color: #ead4ae;
+.reset-btn:hover {
+    background: #d6b98c;
+
+    color: #292929;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(214, 185, 140, 0.18);
 }
 
 
@@ -705,7 +953,7 @@ footer {
 
 @media (max-width: 950px) {
 
-    .terms-grid {
+    .category-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -726,7 +974,7 @@ footer {
     }
 
 
-    ul {
+    nav ul {
         gap: 16px;
 
         flex-wrap: wrap;
@@ -735,7 +983,7 @@ footer {
     }
 
 
-    ul li a {
+    nav ul li a {
         font-size: 13px;
     }
 
@@ -745,7 +993,7 @@ footer {
     }
 
 
-    .language-hero {
+    .progress-hero {
         flex-direction: column;
 
         text-align: center;
@@ -754,25 +1002,31 @@ footer {
     }
 
 
-    .language-icon {
+    .progress-icon {
         width: 75px;
+
         height: 75px;
 
         font-size: 32px;
     }
 
 
-    .hero-info h1 {
+    .progress-hero h1 {
         font-size: 32px;
     }
 
 
-    .term-count {
-        min-width: 110px;
+    .overall-stats {
+        grid-template-columns: 1fr;
     }
 
 
-    .terms-grid {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .recent-grid {
         grid-template-columns: 1fr;
     }
 
@@ -781,25 +1035,34 @@ footer {
 
 @media (max-width: 450px) {
 
-    .hero-info h1 {
+    .progress-hero h1 {
         font-size: 27px;
     }
 
 
-    .hero-info p {
+    .progress-hero p {
         font-size: 13px;
     }
 
 
-    .search-box button {
-        padding: 11px 15px;
-
-        font-size: 12px;
+    .overall-card {
+        padding: 22px;
     }
 
 
-    .term-card {
+    .category-card {
         padding: 22px;
+    }
+
+
+    .recent-card {
+        padding: 17px;
+    }
+
+
+    .category-title h2,
+    .recent-title h2 {
+        font-size: 26px;
     }
 
 }

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Results | Code Dictionary</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="learning.html">
+                        Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="languages.html">
+                        Languages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="az.html">
+                        Dictionary
+                    </a>
+                </li>
+
+
+                <!-- More -->
+
+                <li class="dropdown">
+
+                    <a href="#" class="more-link">
+
+                        More
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </a>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="favorites.html">
+                            <i class="fa-regular fa-star"></i>
+                            Favorites
+                        </a>
+
+                        <a href="progress.html">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Progress
+                        </a>
+
+                        <a href="programming.html">
+                            <i class="fa-solid fa-code"></i>
+                            Programming
+                        </a>
+
+                        <a href="computer.html">
+                            <i class="fa-solid fa-computer"></i>
+                            Computer
+                        </a>
+
+                        <a href="questions.html">
+                            <i class="fa-solid fa-circle-question"></i>
+                            Questions
+                        </a>
+
+                        <a href="about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            About
+                        </a>
+
+                        <a href="services.html">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Services
+                        </a>
+
+                        <a href="contact.html">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
+
+                        <a href="privacy.html">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Privacy
+                        </a>
+
+                        <a href="terms.html">
+                            <i class="fa-solid fa-file-contract"></i>
+                            Terms
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- Theme -->
+
+                <li>
+
+                    <button
+                        class="theme-btn"
+                        id="themeBtn"
+                        type="button"
+                    >
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Main -->
+
+    <main>
+
+
+        <!-- Result Hero -->
+
+        <section class="result-hero">
+
+            <div class="result-icon">
+
+                <i class="fa-solid fa-trophy"></i>
+
+            </div>
+
+
+            <span>
+                Quiz Completed
+            </span>
+
+
+            <h1>
+                Your <b>Result</b>
+            </h1>
+
+
+            <p>
+                Great work! Here is your quiz performance.
+            </p>
+
+        </section>
+
+
+
+        <!-- Result Card -->
+
+        <section class="result-section">
+
+
+            <div class="result-card">
+
+
+                <!-- Score Circle -->
+
+                <div class="score-circle">
+
+                    <div class="score-content">
+
+                        <strong id="resultPercent">
+                            0%
+                        </strong>
+
+                        <span>
+                            Score
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Category -->
+
+                <div class="result-category">
+
+                    <span>
+                        Category
+                    </span>
+
+                    <strong id="resultCategory">
+                        Programming
+                    </strong>
+
+                </div>
+
+
+
+                <!-- Score -->
+
+                <div class="score-number">
+
+                    <strong id="resultScore">
+                        0 / 0
+                    </strong>
+
+                    <span>
+                        Correct Answers
+                    </span>
+
+                </div>
+
+
+
+                <!-- Message -->
+
+                <p
+                    class="result-message"
+                    id="resultMessage"
+                >
+                    Keep learning and keep improving!
+                </p>
+
+
+
+                <!-- Stats -->
+
+                <div class="result-stats">
+
+
+                    <div class="result-stat">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <strong id="correctAnswers">
+                            0
+                        </strong>
+
+                        <span>
+                            Correct
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                        <strong id="wrongAnswers">
+                            0
+                        </strong>
+
+                        <span>
+                            Wrong
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                        <strong id="totalQuestions">
+                            0
+                        </strong>
+
+                        <span>
+                            Questions
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Actions -->
+
+                <div class="result-actions">
+
+                    <a
+                        href="questions.html"
+                        class="result-btn primary"
+                    >
+
+                        <i class="fa-solid fa-rotate-right"></i>
+
+                        Try Again
+
+                    </a>
+
+
+                    <a
+                        href="learning.html"
+                        class="result-btn"
+                    >
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        Learning
+
+                    </a>
+
+
+                    <a
+                        href="home.html"
+                        class="result-btn"
+                    >
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Home
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="results.js"></script>
+    <script src="theme.js"></script>
+
+</body>
+
+</html>

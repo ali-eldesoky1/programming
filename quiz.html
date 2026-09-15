@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quiz | Code Dictionary</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         Header
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <span>Code</span>Dictionary
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="learning.html">
+                        Learning
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="languages.html">
+                        Languages
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="az.html">
+                        Dictionary
+                    </a>
+                </li>
+
+
+                <!-- More -->
+
+                <li class="dropdown">
+
+                    <a href="#" class="more-link">
+
+                        More
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </a>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="favorites.html">
+                            <i class="fa-regular fa-star"></i>
+                            Favorites
+                        </a>
+
+
+                        <a href="progress.html">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Progress
+                        </a>
+
+
+                        <a href="programming.html">
+                            <i class="fa-solid fa-code"></i>
+                            Programming
+                        </a>
+
+
+                        <a href="computer.html">
+                            <i class="fa-solid fa-computer"></i>
+                            Computer
+                        </a>
+
+
+                        <a href="quiz.html">
+                            <i class="fa-solid fa-circle-question"></i>
+                            Quiz
+                        </a>
+
+
+                        <a href="about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            About
+                        </a>
+
+
+                        <a href="services.html">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Services
+                        </a>
+
+
+                        <a href="contact.html">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
+
+
+                        <a href="privacy.html">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Privacy
+                        </a>
+
+
+                        <a href="terms.html">
+                            <i class="fa-solid fa-file-contract"></i>
+                            Terms
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- Theme -->
+
+                <li>
+
+                    <button
+                        class="theme-btn"
+                        id="themeBtn"
+                        type="button"
+                    >
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         Main
+    ========================== -->
+
+    <main>
+
+
+        <!-- Hero -->
+
+        <section class="quiz-hero">
+
+            <div class="quiz-icon">
+
+                <i class="fa-solid fa-circle-question"></i>
+
+            </div>
+
+
+            <div class="hero-info">
+
+                <span>
+                    Test Your Knowledge
+                </span>
+
+
+                <h1>
+                    Coding <b>Quiz</b>
+                </h1>
+
+
+                <p>
+                    Challenge yourself with programming and computer questions.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Quiz Categories
+        ========================== -->
+
+        <section class="quiz-section">
+
+
+            <div class="section-title">
+
+                <span>
+                    <i class="fa-solid fa-layer-group"></i>
+                    Choose a Category
+                </span>
+
+
+                <h2>
+                    Start Your <b>Quiz</b>
+                </h2>
+
+            </div>
+
+
+
+            <div class="quiz-categories">
+
+
+                <!-- Computer -->
+
+                <button
+                    class="quiz-category"
+                    data-category="Computer"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-solid fa-computer"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Computer
+                        </h3>
+
+                        <p>
+                            Test your computer basics.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- Programming -->
+
+                <button
+                    class="quiz-category"
+                    data-category="Programming"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Programming
+                        </h3>
+
+                        <p>
+                            Variables, functions, loops and more.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- HTML -->
+
+                <button
+                    class="quiz-category"
+                    data-category="HTML"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-brands fa-html5"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            Test your HTML knowledge.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- CSS -->
+
+                <button
+                    class="quiz-category"
+                    data-category="CSS"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            Selectors, properties and layouts.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- JavaScript -->
+
+                <button
+                    class="quiz-category"
+                    data-category="JavaScript"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-brands fa-js"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Test your JavaScript skills.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+
+                <!-- C# -->
+
+                <button
+                    class="quiz-category"
+                    data-category="C#"
+                    type="button"
+                >
+
+                    <div class="category-icon">
+
+                        <i class="fa-solid fa-hashtag"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            C#
+                        </h3>
+
+                        <p>
+                            Variables, conditions and more.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             Quiz Area
+        ========================== -->
+
+        <section
+            class="quiz-area"
+            id="quizArea"
+        >
+
+
+            <!-- Quiz Header -->
+
+            <div class="quiz-header">
+
+                <span id="quizCategory">
+                    Programming
+                </span>
+
+
+                <strong id="questionNumber">
+                    1 / 20
+                </strong>
+
+            </div>
+
+
+
+            <!-- Progress -->
+
+            <div class="question-progress">
+
+                <div
+                    id="questionProgress"
+                ></div>
+
+            </div>
+
+
+
+            <!-- Question -->
+
+            <div class="question-card">
+
+                <span>
+                    Question
+                </span>
+
+
+                <h2 id="questionText">
+                    Loading question...
+                </h2>
+
+            </div>
+
+
+
+            <!-- Answers -->
+
+            <div
+                class="answers"
+                id="answers"
+            ></div>
+
+
+
+            <!-- Next -->
+
+            <button
+                class="next-btn"
+                id="nextBtn"
+                type="button"
+                disabled
+            >
+
+                Next Question
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             Result
+        ========================== -->
+
+        <section
+            class="result-area"
+            id="resultArea"
+        >
+
+            <div class="result-icon">
+
+                <i class="fa-solid fa-trophy"></i>
+
+            </div>
+
+
+            <span>
+                Quiz Completed
+            </span>
+
+
+            <h2>
+                Your <b>Result</b>
+            </h2>
+
+
+            <div class="score">
+
+                <strong id="score">
+                    0
+                </strong>
+
+                <span>
+                    / 20
+                </span>
+
+            </div>
+
+
+            <p id="resultMessage">
+                Great job! Keep learning and improving.
+            </p>
+
+
+            <div class="result-stats">
+
+                <div>
+
+                    <strong id="correctAnswers">
+                        0
+                    </strong>
+
+                    <span>
+                        Correct
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="wrongAnswers">
+                        0
+                    </strong>
+
+                    <span>
+                        Wrong
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="resultPercent">
+                        0%
+                    </strong>
+
+                    <span>
+                        Score
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-buttons">
+
+                <button
+                    id="retryBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                    Try Again
+
+                </button>
+
+
+                <button
+                    id="backQuizBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Quiz Categories
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Code Dictionary — Learn. Code. Grow.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="quiz.js"></script>
+
+    <script src="theme.js"></script>
+
+
+</body>
+
+</html>
